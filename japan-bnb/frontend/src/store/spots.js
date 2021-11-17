@@ -3,10 +3,11 @@ const SPOT_FILL = "session/ShowSpot";
 const DELETE_SPOT = "session/DeleteSpot";
 const UPDATE_SPOT = "session/UpdateSpot";
 const BOOK_SPOT = "session/BookSpot";
-const ShowSpot = (spot) => {
+const ShowSpot = (spot ,bookings) => {
   return {
     type: SPOT_FILL,
-    spot
+    spot,
+    bookings
   };
 };
 const DeleteSpot = (spots) => {
@@ -42,8 +43,8 @@ export const PostABooking = (input) => async (dispatch) => {
 export const GetSpot = (id) => async (dispatch) => {
   const response = await fetch(`/api/spots/${id}`);
   if (response.ok) {
-    const { spots  } = await response.json();
-    dispatch(ShowSpot(spots));
+    const { spots,bookings  } = await response.json();
+    dispatch(ShowSpot(spots,bookings));
   }
 };
 export const DeleteASpot = (id) => async (dispatch) => {

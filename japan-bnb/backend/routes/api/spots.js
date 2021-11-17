@@ -1,6 +1,6 @@
 const express = require("express");
 const asyncHandler = require("express-async-handler");
-const { Spot } = require("../../db/models");
+const { Spot, Booking } = require("../../db/models");
 const router = express.Router();
 const {requireAuth}= require("../../utils/auth")
 
@@ -9,8 +9,10 @@ router.get(
   requireAuth,
   asyncHandler(async function (req, res) {
     const spots = await Spot.findByPk(req.params.id);
-
-    return res.json({ spots});
+    const bookings = await Booking.findAll({
+      where: {spotId: req.params.id}
+    })
+    return res.json({ spots , bookings});
   })
 );
 
