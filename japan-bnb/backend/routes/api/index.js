@@ -2,8 +2,9 @@ const router = require("express").Router();
 const sessionRouter = require("./session.js");
 const usersRouter = require("./users.js");
 const homeRouter = require('./home')
-
+const spotRouter = require('./spots')
 router.use('/home',homeRouter)
+router.use('/spot-page',spotRouter)
 
 
 

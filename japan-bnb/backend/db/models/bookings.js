@@ -1,7 +1,7 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   const Booking = sequelize.define('Booking', {
-    spodId: {
+    spotId: {
       allowNull: false,
       type: DataTypes.INTEGER,
       refrences: {model:"Spots"}
