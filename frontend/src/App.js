@@ -7,6 +7,8 @@ import * as sessionActions from './store/session';
 import Navigation from './components/Navigation';
 import { Modal } from './context/Modal';
 import  {Home}  from './components/home/home';
+import {Search} from './components/Search/search'
+import { SpotPage } from './components/Spot-Page/spot-page';
 function App() {
   const dispatch = useDispatch();
   const [isLoaded, setIsLoaded] = useState(false);
@@ -22,6 +24,12 @@ function App() {
         <Switch>
           <Route path="/home" >
             <Home />
+          </Route>
+          <Route path="/search" >
+            <Search />
+          </Route>
+          <Route path="/spot-page/:id" >
+            < SpotPage />
           </Route>
         </Switch>
       )}

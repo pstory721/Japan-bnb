@@ -34,7 +34,7 @@ const DeleteReview = (reviews) => {
 };
 
 export const UpdateAReview = (input, id) => async (dispatch) => {
-  const response = await fetch(`/api/review${id}`, {
+  const response = await csrfFetch(`/api/review/${id}`, {
     method:"PUT",
     body: JSON.stringify(input),
     headers: { "Content-Type": "application/json" },
@@ -47,7 +47,7 @@ export const UpdateAReview = (input, id) => async (dispatch) => {
 }
 
 export const AddAReview= (input,id) => async (dispatch) => {
-  const response = await fetch(`/api/review${id}`, {
+  const response = await fetch(`/api/review/${id}`, {
     method: "POST",
     body: input,
   });
@@ -59,7 +59,7 @@ export const AddAReview= (input,id) => async (dispatch) => {
 }
 
 export const GetAllReviews = (id) => async (dispatch) => {
-  const response = await fetch(`/api/review${id}`);
+  const response = await fetch(`/api/review/${id}`);
 
   if (response.ok) {
     const {reviews} = await response.json();
@@ -68,7 +68,7 @@ export const GetAllReviews = (id) => async (dispatch) => {
 };
 
 export const DeleteAReview= (id) => async (dispatch) => {
-  const response = await csrfFetch(`/api/review${id}`, {
+  const response = await csrfFetch(`/api/review/${id}`, {
     method: "DELETE",
   });
   if (response.ok) {

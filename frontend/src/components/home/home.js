@@ -25,7 +25,10 @@ export function Home() {
       <div className="container2">
         <div className="patrickNo">
           <div>
-            <h2 className='left'> Visit the bustling cities </h2>
+            <div className="left">
+            <h2 className=''> Visit the bustling cities </h2>
+            <button className="link"><Link to="search/cities">Ready to visit cities?</Link></button>
+            </div>
           <img
             className="first"
             src="https://res.cloudinary.com/dveuedvvm/image/upload/v1637197165/buvh0lklouey96h2pwjq.jpg"
@@ -33,7 +36,10 @@ export function Home() {
           />
           </div>
           <div>
-          <h2 className='left'> Stay in unique homes </h2>
+          <div className="left">
+          <h2 className=''> Stay in unique homes </h2>
+          <button className="link"><Link to="search/homes"> Ready to be unique?</Link></button>
+          </div>
           <img
             className="second"
             src="https://res.cloudinary.com/dveuedvvm/image/upload/v1637201304/03047561_original_f9rh8n.jpg"
@@ -41,7 +47,10 @@ export function Home() {
           />
           </div>
           <div>
-          <h2 className='left'> Live in Traditional villas accross<br></br> the country</h2>
+          <div className="left">
+          <h2 className=''> Live in Traditional villas accross<br></br> the country</h2>
+          <button className="link"><Link to="search/country-side">Ready to see natural beauty?</Link></button>
+          </div>
           <img
             className="third"
             src="https://res.cloudinary.com/dveuedvvm/image/upload/v1637201332/images_tjudtb.jpg"

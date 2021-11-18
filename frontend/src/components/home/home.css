@@ -101,6 +101,17 @@
   border-radius: 10px;
   text-decoration: none;
 }
+.links{
+  font-size: 16px;
+  color: #5E02A4;
+  color: -moz-linear-gradient(left, #5E02A4 0%, #892DCB 50%, #AD2A93 100%);
+  color: -webkit-linear-gradient(left, #5E02A4 0%, #892DCB 50%, #AD2A93 100%);
+  color: linear-gradient(to right, #5E02A4 0%, #892DCB 50%, #AD2A93 100%);
+  padding: 10px;
+  margin-bottom:5px;
+border-radius: 10px;
+text-decoration: none;
+}
 a{
     text-decoration:none
 }
