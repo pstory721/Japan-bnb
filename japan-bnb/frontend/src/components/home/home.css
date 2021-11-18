@@ -51,11 +51,9 @@
 
 .container2 {
   height: 100%;
-  width: 1000px;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
-  position: absolute;
-  bottom: 0;
+  justify-content: space-between;
 }
 .first {
   height: 400px;
@@ -68,4 +66,41 @@
 .third {
   height: 400px;
   width: 400px;
+}
+.patrickNo {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  height: 400px;
+  width: 100%;
+  margin-top: 10px;
+}
+.left {
+  position: absolute;
+  top: bottom 400px;
+  border-radius: 5px;
+  color: white;
+  background: rgba(0, 0, 0, 0.596);
+}
+.yo {
+  position: absolute;
+  top: 150px;
+  border-radius: 5px;
+  color: white;
+  background: rgba(0, 0, 0, 0.596);
+}
+#ann {
+    font-size: 16px;
+    color: #5E02A4;
+    color: -moz-linear-gradient(left, #5E02A4 0%, #892DCB 50%, #AD2A93 100%);
+    color: -webkit-linear-gradient(left, #5E02A4 0%, #892DCB 50%, #AD2A93 100%);
+    color: linear-gradient(to right, #5E02A4 0%, #892DCB 50%, #AD2A93 100%);
+    padding: 10px;
+    margin-bottom:5px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+a{
+    text-decoration:none
 }

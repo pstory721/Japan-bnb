@@ -1,9 +1,8 @@
-import React, {  useEffect } from "react";
+import React, { useEffect } from "react";
 import { GetStuff } from "../../store/home";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import "./home.css";
-
 
 export function Home() {
   const dispatch = useDispatch();
@@ -17,20 +16,37 @@ export function Home() {
   return (
     <div className="container">
       <div className="home-back">
-        <Link to="/sign-up">Sign up now</Link>
+        <div className="yo">
+        <h1> not sure where to start? <br></br> Perfect we've got your back</h1>
+        <button id ="ann"><Link to="/sign-up">Sign up now</Link> </button>
+        </div>
       </div>
       <div className="container2">
-        <div>
-          <h2 style={{color:"white" , border:"1px solid white"}}>hiiiiiiiiiiii</h2>
-          <image className="first" src="https://res.cloudinary.com/dveuedvvm/image/upload/v1637197165/buvh0lklouey96h2pwjq.jpg" alt="whoops that broke"></image>
-        </div>
-        <div>
-        <h2 style={{color:"white"},{border:"1px solid white"}}>hiiiiiiiiiiii</h2>
-          <image style={{width:"400px" ,height:"400px"}} className="second" src="https://res.cloudinary.com/dveuedvvm/image/upload/v1637201304/03047561_original_f9rh8n.jpg" alt="whoops that broke"></image>
-        </div>
-        <div>
-        <h2 style={{color:"white"},{border:"1px solid white"}}>hiiiiiiiiiiii</h2>
-          <image className="third" src="https://res.cloudinary.com/dveuedvvm/image/upload/v1637201332/images_tjudtb.jpg" alt="whoops that broke"></image>
+        <div className="patrickNo">
+          <div>
+            <h2 className='left'> Visit the bustling cities </h2>
+          <img
+            className="first"
+            src="https://res.cloudinary.com/dveuedvvm/image/upload/v1637197165/buvh0lklouey96h2pwjq.jpg"
+            alt="whoops that broke"
+          />
+          </div>
+          <div>
+          <h2 className='left'> Stay in unique homes </h2>
+          <img
+            className="second"
+            src="https://res.cloudinary.com/dveuedvvm/image/upload/v1637201304/03047561_original_f9rh8n.jpg"
+            alt="whoops that broke"
+          />
+          </div>
+          <div>
+          <h2 className='left'> Live in Traditional villas accross<br></br> the country</h2>
+          <img
+            className="third"
+            src="https://res.cloudinary.com/dveuedvvm/image/upload/v1637201332/images_tjudtb.jpg"
+            alt="whoops that broke"
+          />
+          </div>
         </div>
       </div>
     </div>

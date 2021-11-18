@@ -1,6 +1,6 @@
 const express = require("express");
 const asyncHandler = require("express-async-handler");
-const { Spot, Booking } = require("../../db/models");
+const { Spot, Booking,Image } = require("../../db/models");
 const router = express.Router();
 const {requireAuth}= require("../../utils/auth")
 
@@ -12,7 +12,10 @@ router.get(
     const bookings = await Booking.findAll({
       where: {spotId: req.params.id}
     })
-    return res.json({ spots , bookings});
+    const images = await Image.findAll({
+      where: {spotId: req.params.id}
+    })
+    return res.json({ spots , bookings,images});
   })
 );
 
