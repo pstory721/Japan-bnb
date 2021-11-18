@@ -46,14 +46,10 @@ export const UpdateAReview = (input, id) => async (dispatch) => {
   }
 }
 
-export const AddAReview= (form) => async (dispatch) => {
-  const formData = new FormData()
-  formData.append('content', form.content)
-  formData.append("song_id",form.songId)
-
+export const AddAReview= (input,id) => async (dispatch) => {
   const response = await fetch(`/api/review${id}`, {
     method: "POST",
-    body: formData,
+    body: input,
   });
 
   if (response.ok) {

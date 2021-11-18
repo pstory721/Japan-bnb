@@ -3,11 +3,12 @@ const SPOT_FILL = "session/ShowSpot";
 const DELETE_SPOT = "session/DeleteSpot";
 const UPDATE_SPOT = "session/UpdateSpot";
 const BOOK_SPOT = "session/BookSpot";
-const ShowSpot = (spot ,bookings) => {
+const ShowSpot = (spot ,bookings,images) => {
   return {
     type: SPOT_FILL,
     spot,
-    bookings
+    bookings,
+    images
   };
 };
 const DeleteSpot = (spots) => {
@@ -43,8 +44,8 @@ export const PostABooking = (input) => async (dispatch) => {
 export const GetSpot = (id) => async (dispatch) => {
   const response = await fetch(`/api/spots/${id}`);
   if (response.ok) {
-    const { spots,bookings  } = await response.json();
-    dispatch(ShowSpot(spots,bookings));
+    const { spots,bookings,images  } = await response.json();
+    dispatch(ShowSpot(spots,bookings,images));
   }
 };
 export const DeleteASpot = (id) => async (dispatch) => {
@@ -69,7 +70,7 @@ export const PatchASpot = (input, id) => async (dispatch) => {
   }
 };
 
-const initialState = { spots:[],bookings:[]};
+const initialState = { spots:[],bookings:[],images:[]};
 const SingleSpotReducer = (state = initialState, action) => {
   let newState;
   switch (action.type) {
@@ -77,6 +78,7 @@ const SingleSpotReducer = (state = initialState, action) => {
       newState = Object.assign({}, state);
       newState.spots = action.spot;
       newState.bookings = action.bookings;
+      newState.images = action.images;
       return newState;
     case DELETE_SPOT:
         newState = Object.assign({}, state);
