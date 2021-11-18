@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { GetStuff } from "../../store/home";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import SignupFormModal from "../SignupFormModal";
 import "./home.css";
 
 export function Home() {
@@ -18,7 +19,7 @@ export function Home() {
       <div className="home-back">
         <div className="yo">
         <h1> not sure where to start? <br></br> Perfect we've got your back</h1>
-        <button id ="ann"><Link to="/sign-up">Sign up now</Link> </button>
+        <SignupFormModal />
         </div>
       </div>
       <div className="container2">

@@ -5,6 +5,7 @@ import ProfileButton from "./ProfileButton";
 import LoginFormModal from "../LoginFormModal";
 import * as sessionActions from "../../store/session";
 import "./Navigation.css";
+import SignupFormModal from "../SignupFormModal";
 
 function Navigation({ isLoaded }) {
   const dispatch = useDispatch();
@@ -74,7 +75,7 @@ function Navigation({ isLoaded }) {
 
 
       <div>
-        {signup}
+        <SignupFormModal />
         {demoButton}
         <div>{sessionLinks}</div>
       </div>

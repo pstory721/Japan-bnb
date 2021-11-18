@@ -1,0 +1,29 @@
+.signup-button{
+    font-size: 16px;
+    color: #5E02A4;
+    color: -moz-linear-gradient(left, #5E02A4 0%, #892DCB 50%, #AD2A93 100%);
+    color: -webkit-linear-gradient(left, #5E02A4 0%, #892DCB 50%, #AD2A93 100%);
+    color: linear-gradient(to right, #5E02A4 0%, #892DCB 50%, #AD2A93 100%);
+    padding: 5px;
+    margin-bottom:5px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.sign-up-form{
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border-radius: 25px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sign-cred{
+    color:rgb(255, 255, 255);
+}
+
+.the-errors{
+    font-weight: bold;
+}
