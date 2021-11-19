@@ -4,11 +4,13 @@ import sessionReducer from './session';
 import HomeReducer from './home';
 import SingleSpotReducer from './spots';
 import ReviewReducer from './review';
+import mapsReducer from './map';
 const rootReducer = combineReducers({
   session:sessionReducer,
   Home: HomeReducer,
   Spot: SingleSpotReducer,
-  Review: ReviewReducer
+  Review: ReviewReducer,
+  Maps: mapsReducer
 });
 
 let enhancer;
