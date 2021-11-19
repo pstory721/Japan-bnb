@@ -5,8 +5,8 @@ const homeRouter = require('./home')
 const spotRouter = require('./spots')
 const reviewRouter = require('./reviews')
 router.use('/home',homeRouter)
-router.use('/spot-page',spotRouter)
-router.use('/group-page',reviewRouter)
+router.use('/spots',spotRouter)
+router.use('/review',reviewRouter)
 
 
 

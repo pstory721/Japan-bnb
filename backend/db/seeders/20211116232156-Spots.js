@@ -12,6 +12,7 @@ module.exports = {
           lng:null,
           name:'test',
           price:300,
+          image_url:"https://www.japan-guide.com/thumb/XYZeXYZe2158_1680b.jpg" ,
           createdAt: new Date(),
           updatedAt: new Date(),
         }

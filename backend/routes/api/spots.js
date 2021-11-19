@@ -38,14 +38,16 @@ router.put("/:id", asyncHandler(async function (req, res) {
   return res.json({UpdatedSpot});
 }));
 router.post('/', asyncHandler(async function (req, res) {
-    const {address,city,lat,lng,name,price} = req.body
-    const newSpot = await Venue.create({
+    const {address,city,lat,lng,name,price,userId,image_url} = req.body
+    const newSpot = await Spot.create({
+      userId,
       address,
       city,
       lat,
       lng,
       name,
       price,
+      image_url,
     }
       )
       return res.json({newSpot});

@@ -93,8 +93,7 @@ const SingleSpotReducer = (state = initialState, action) => {
   switch (action.type) {
     case SPOT_FILL:
       newState = Object.assign({}, state);
-      newState.spots = [...state.spots, action.spot];
-      newState.bookings = action.bookings;
+      newState.spots = [...state.spots, action.spots]      newState.bookings = action.bookings;
       newState.images = action.images;
       return newState;
     case DELETE_SPOT:

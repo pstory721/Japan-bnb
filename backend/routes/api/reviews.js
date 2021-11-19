@@ -35,7 +35,7 @@ router.put("/:id", asyncHandler(async function (req, res) {
 }));
 router.post('/', asyncHandler(async function (req, res) {
   const {userId,spotId,review} = req.body
-  const newReview = await rsvp.create({
+  const newReview = await Review.create({
       userId,
       spotId,
       review
