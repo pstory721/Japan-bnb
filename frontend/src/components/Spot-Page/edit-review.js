@@ -1,35 +1,38 @@
 import React, { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch,useSelector } from "react-redux";
 import { useHistory, useParams } from 'react-router-dom';
 import {UpdateAReview} from "../../store/review"
 
-function EditForm({id}){
+function EditForm({reviewId}){
+    const sessionUser = useSelector((state) => state.session.user);
     const dispatch = useDispatch();
     const history = useHistory();
-    let spotId = useParams()
-    const [content, setContent] = useState("")
+    let {id} = useParams()
+    const [review, setReview] = useState("")
+    const [spotId,setSpotId] = useState(id)
+    const [userId,setUserId] = useState(sessionUser.id)
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const payload = { content}
-        dispatch(UpdateAReview(payload, id))
+        let payload = {review, userId,spotId}
+        dispatch(UpdateAReview(payload, reviewId))
 
-        history.push(`/spot-page/${spotId}`);
+        history.push(`/spot-page/${id}`);
     }
 
     return (
         <form className="CommentForm" onSubmit={handleSubmit}>
-            <label className="noteForms">
-            <textarea
-                    id='comment'
-                    type="textarea"
-                    value={content}
-                    onChange={(e) => setContent(e.target.value)}
-                    placeholder="Your Review here"
-            />
-            </label>
-            <button id="submit" type="submit">Submit</button>
-        </form>
+        <label className="noteForms">
+        <textarea
+                id='comment'
+                type="textarea"
+                value={review}
+                onChange={(e) => setReview(e.target.value)}
+                placeholder="Your Review here"
+        />
+        </label>
+        <button id="submit" type="submit">Submit</button>
+    </form>
     )
 }
 

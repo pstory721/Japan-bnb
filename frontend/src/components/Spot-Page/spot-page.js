@@ -31,7 +31,7 @@ export function SpotPage() {
       handleDelete()
     }}
   >
-    Delete Song
+    Delete spot
   </button>
   }
   let otherCheck;
@@ -70,14 +70,14 @@ export function SpotPage() {
               <p className="">{review.review}</p>
               <button className='x' id="splashlinkbuttons" onClick={() => {
                 dispatch(DeleteAReview(review.id));
-                history.push(`/song-page/${singleSpot.id}`)
+                history.push(`/spot-page/${singleSpot.id}`)
                 }}>
                 X
               </button>
               <button className='e' onClick={() => showForm === false ? setShowForm(true) : setShowForm(false)} id="splashlinkbuttons">
                 Edit
               </button>
-          {showForm && (<EditForm id={review.id} />)}
+          {showForm && (<EditForm reviewId={review.id} />)}
         </div>)}
         </div>
     </div>

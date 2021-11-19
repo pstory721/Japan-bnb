@@ -46,10 +46,10 @@ export const UpdateAReview = (input, id) => async (dispatch) => {
   }
 }
 
-export const AddAReview= (input,id) => async (dispatch) => {
-  const response = await fetch(`/api/review/${id}`, {
+export const AddAReview= (input) => async (dispatch) => {
+  const response = await csrfFetch(`/api/review`, {
     method: "POST",
-    body: input,
+    body: JSON.stringify(input)
   });
 
   if (response.ok) {

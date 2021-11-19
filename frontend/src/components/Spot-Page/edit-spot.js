@@ -12,9 +12,9 @@ export function UpdateForm({id}) {
         e.preventDefault();
 
         const payload = {name}
-        let newSong = await dispatch(UpdateASpot(payload,id))
+        let newSpot = await dispatch(UpdateASpot(payload,id))
 
-        if(newSong){
+        if(newSpot){
             history.push(`/spot-page/${id}`)
         }
     }
@@ -32,7 +32,7 @@ export function UpdateForm({id}) {
                     required
                 />
                  </label>
-            <button id="submit" type="submit">Change name</button>
+            <button id="submit" type="submit">Change name, and price per night</button>
         </form>
         </div>
     )
