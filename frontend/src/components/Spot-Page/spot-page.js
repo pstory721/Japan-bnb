@@ -35,7 +35,7 @@ export function SpotPage() {
   </button>
   }
   let otherCheck;
-  if (sessionUser.id === singleSpot?.user_id) {
+  if (sessionUser.id === singleSpot?.userId) {
     otherCheck = <UpdateForm id={singleSpot.id}/>
   }
 

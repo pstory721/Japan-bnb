@@ -1,11 +1,13 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import ProfileButton from "./ProfileButton";
 import LoginFormModal from "../LoginFormModal";
 import * as sessionActions from "../../store/session";
 import "./Navigation.css";
 import SignupFormModal from "../SignupFormModal";
+
+
 
 function Navigation({ isLoaded }) {
   const dispatch = useDispatch();
@@ -22,6 +24,11 @@ function Navigation({ isLoaded }) {
       </>
     );
   }
+  let upload;
+  if (sessionUser) {
+    upload = <button><Link to="/upload">Host Now</Link></button>
+  }
+
   let sessionhomebutton;
   if (sessionUser) {
 
@@ -77,7 +84,10 @@ function Navigation({ isLoaded }) {
       <div>
         <SignupFormModal />
         {demoButton}
-        <div>{sessionLinks}</div>
+        <div>
+          {upload}
+          {sessionLinks}
+        </div>
       </div>
       </div>
     </div>

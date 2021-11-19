@@ -6,6 +6,7 @@ import {UpdateASpot} from "../../store/spots"
 export function UpdateForm({id}) {
     const dispatch = useDispatch()
     const [name,setName] = useState("");
+    const [price,setPrice] = useState("");
     const history = useHistory()
 
     const handleSubmit = async (e) => {
@@ -29,6 +30,16 @@ export function UpdateForm({id}) {
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     placeholder="New name"
+                    required
+                />
+                 </label>
+                 <label className="noteForms">
+                <input
+                    id='title'
+                    type="number"
+                    value={price}
+                    onChange={(e) => setPrice(e.target.value)}
+                    placeholder="New Price"
                     required
                 />
                  </label>
