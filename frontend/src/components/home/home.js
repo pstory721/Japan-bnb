@@ -27,7 +27,7 @@ export function Home() {
           <div>
             <div className="left">
             <h2 className=''> Visit the bustling cities </h2>
-            <button className="link"><Link to="search/cities">Ready to visit cities?</Link></button>
+            <button className="link"><Link to="search">Ready to visit cities?</Link></button>
             </div>
           <img
             className="first"
@@ -38,7 +38,7 @@ export function Home() {
           <div>
           <div className="left">
           <h2 className=''> Stay in unique homes </h2>
-          <button className="link"><Link to="search/homes"> Ready to be unique?</Link></button>
+          <button className="link"><Link to="search"> Ready to be unique?</Link></button>
           </div>
           <img
             className="second"
@@ -49,7 +49,7 @@ export function Home() {
           <div>
           <div className="left">
           <h2 className=''> Live in Traditional villas accross<br></br> the country</h2>
-          <button className="link"><Link to="search/country-side">Ready to see natural beauty?</Link></button>
+          <button className="link"><Link to="search">Ready to see natural beauty?</Link></button>
           </div>
           <img
             className="third"

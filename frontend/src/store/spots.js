@@ -54,7 +54,7 @@ export const PostASpot = (input) => async (dispatch) => {
   });
   if (response.ok) {
     const { newSpot } = await response.json();
-    dispatch(AddBooking(newSpot));
+    dispatch(AddSpot(newSpot));
   }
 };
 
@@ -76,6 +76,7 @@ export const DeleteASpot = (id) => async (dispatch) => {
 };
 
 export const UpdateASpot = (input, id) => async (dispatch) => {
+  console.log(">>>>>>>>>>>",id)
   const response = await csrfFetch(`/api/spots/${id}`, {
     method: "PUT",
     body: JSON.stringify(input),
@@ -93,7 +94,7 @@ const SingleSpotReducer = (state = initialState, action) => {
   switch (action.type) {
     case SPOT_FILL:
       newState = Object.assign({}, state);
-      newState.spots = [...state.spots, action.spots]      newState.bookings = action.bookings;
+      newState.spots = [...state.spots, action.spots];
       newState.images = action.images;
       return newState;
     case DELETE_SPOT:

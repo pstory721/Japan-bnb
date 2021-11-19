@@ -24,7 +24,8 @@ export function SpotPage() {
   }
 
   let userCheck;
-  if (sessionUser.id === singleSpot?.userId) {
+  singleSpot.map((spot) => {
+  if (sessionUser.id === spot.userId) {
     userCheck = <button
     id=""
     onClick={() => {
@@ -33,11 +34,12 @@ export function SpotPage() {
   >
     Delete spot
   </button>
-  }
+  }})
   let otherCheck;
-  if (sessionUser.id === singleSpot?.userId) {
-    otherCheck = <UpdateForm id={singleSpot.id}/>
-  }
+singleSpot.map((spot) => {
+  if (sessionUser.id === spot.userId) {
+    otherCheck = <UpdateForm id={spot.userId}/>
+  }})
 
   const [showForm, setShowForm] = useState(false);
 
@@ -59,7 +61,7 @@ export function SpotPage() {
             <div>
             <img src={image.image_url} width='200px' height='200px' alt='art'></img><br></br>
             </div>))}
-            {singleSpot.name}
+            {singleSpot.map(spot => spot.name)}
             {userCheck}
             {otherCheck}
             <ReviewForm id={id}/>
