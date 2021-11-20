@@ -76,7 +76,6 @@ export const DeleteASpot = (id) => async (dispatch) => {
 };
 
 export const UpdateASpot = (input, id) => async (dispatch) => {
-  console.log(">>>>>>>>>>>",id)
   const response = await csrfFetch(`/api/spots/${id}`, {
     method: "PUT",
     body: JSON.stringify(input),

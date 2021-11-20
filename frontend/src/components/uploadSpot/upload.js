@@ -1,14 +1,14 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import { useDispatch,useSelector } from "react-redux";
 import { PostASpot } from "../../store/spots";
-
+import { getKey } from '../../store/map';
 
 
 export function UploadForm() {
   const dispatch = useDispatch();
   const sessionUser = useSelector((state) => state.session.user);
-
+  const key = useSelector((state) => state.Maps.key);
   const [name, setName] = useState("");
   const [address, setAddress] = useState("");
   const [city, setCity] = useState("");
@@ -16,6 +16,17 @@ export function UploadForm() {
   const [image_url, setImage_url] = useState("");
   const [errors, setErrors] = useState([]);
   let history = useHistory();
+
+
+  useEffect(() => {
+    if (!key) {
+      dispatch(getKey());
+    }
+  }, [dispatch, key]);
+
+  if (!key) {
+    return null;
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -29,13 +40,25 @@ export function UploadForm() {
     if (city === "") {
       errors.push("city field is required");
     }
+    if (image_url === "") {
+      errors.push("Please add a cover photo");
+    }
+    if (price === 0 || price === null) {
+      errors.push("Please add a Price, it cannot be zero");
+    }
 
     setErrors(errors);
+    const response = await fetch (`https://maps.googleapis.com/maps/api/geocode/json?address=${address}&key=${key}`)
+    const data = await response.json()
+    const lat = data.results[0].geometry.location.lat
+    const lng = data.results[0].geometry.location.lng
     const payload = {
       userId:sessionUser.id ,
       name,
       address,
       city,
+      lat,
+      lng,
       price,
       image_url
 

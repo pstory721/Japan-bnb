@@ -11,10 +11,16 @@ function ReviewForm({id}) {
     const [review, setReview] = useState("")
     const [spotId,setSpotId] = useState(id)
     const [userId,setUserId] = useState(sessionUser.id)
+    const [errors, setErrors] = useState([]);
     const history = useHistory()
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        const errors = [];
+        if (review === "") {
+          errors.push("review is required");
+        }
+        setErrors(errors);
         let payload = {review, userId,spotId}
         dispatch(AddAReview(payload))
 
@@ -24,6 +30,11 @@ function ReviewForm({id}) {
 
     return (
         <form className="CommentForm" onSubmit={handleSubmit}>
+            <ul className="errors">
+          {errors.map((error) => (
+            <li key={error}>{error}</li>
+          ))}
+        </ul>
             <label className="noteForms">
             <textarea
                     id='comment'
