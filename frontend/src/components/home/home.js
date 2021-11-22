@@ -14,12 +14,31 @@ export function Home() {
     dispatch(GetStuff());
   }, [dispatch]);
 
+
+let signup;
+if (!sessionUser) {
+  signup = <SignupFormModal />
+}
+
+  let button3;
+  if (sessionUser) {
+    button3 = <button className="link"><Link to="search">Ready to see natural beauty?</Link></button>
+  }
+ let button2;
+  if (sessionUser) {
+    button2 =  <button className="link"><Link to="search"> Ready to be unique?</Link></button>
+  }
+ let button1;
+  if (sessionUser) {
+    button1 = <button className="link"><Link to="search">Ready to visit cities?</Link></button>
+  }
+
   return (
     <div className="container">
       <div className="home-back">
         <div className="yo">
         <h1> not sure where to start? <br></br> Perfect we've got your back</h1>
-        <SignupFormModal />
+        {signup}
         </div>
       </div>
       <div className="container2">
@@ -27,7 +46,7 @@ export function Home() {
           <div>
             <div className="left">
             <h2 className=''> Visit the bustling cities </h2>
-            <button className="link"><Link to="search">Ready to visit cities?</Link></button>
+           {button1}
             </div>
           <img
             className="first"
@@ -38,7 +57,7 @@ export function Home() {
           <div>
           <div className="left">
           <h2 className=''> Stay in unique homes </h2>
-          <button className="link"><Link to="search"> Ready to be unique?</Link></button>
+         {button2}
           </div>
           <img
             className="second"
@@ -49,7 +68,7 @@ export function Home() {
           <div>
           <div className="left">
           <h2 className=''> Live in Traditional villas accross<br></br> the country</h2>
-          <button className="link"><Link to="search">Ready to see natural beauty?</Link></button>
+         {button3}
           </div>
           <img
             className="third"

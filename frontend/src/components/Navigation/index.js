@@ -69,9 +69,7 @@ function Navigation({ isLoaded }) {
   }
   let signup;
   if(!sessionUser){
-    signup=<NavLink id="nav" to="/signup">
-    Sign Up
-  </NavLink>
+    signup= <SignupFormModal />
   }
   return (
     <div id="navbar">
@@ -82,7 +80,7 @@ function Navigation({ isLoaded }) {
 
 
       <div>
-        <SignupFormModal />
+        {signup}
         {demoButton}
         <div>
           {upload}

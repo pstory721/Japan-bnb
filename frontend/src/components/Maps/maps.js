@@ -37,12 +37,12 @@ useEffect(() => {
 
         />
       )}
-       {searchSpots.map((spot) => (
+       {/* {searchSpots.map((spot) => (
          new google.maps.Marker({
           position: {lat:spot.lat,lng:spot.lng},
           title: "spot marker",
         })
-       ))}
+       ))} */}
     </>
   );
 };

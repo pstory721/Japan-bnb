@@ -1,19 +1,20 @@
 .container3 {
     display: flex;
-    position:absolute;
+    /* position:absolute; */
     float:left;
-    top:150px;
+    /* top:150px; */
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap:unset;
     height: 100%;
-    width: 50%;
+    width: 1200px;
   }
 
 
   .pho{
-      margin:20px;
+      border-bottom: 1px solid whitesmoke;
+      float: left;
       left:20px;
       height:200px;
       width:400px;
@@ -24,6 +25,17 @@
     right:165px;
 }
 .bleh{
+    margin-top:10px;
+    border:1px solid whitesmoke;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+}
+.jacob{
+    color: whitesmoke;
+    margin-bottom: 40px;
+    text-align: unset;
+    float:right;
+    overflow: hidden;
 }

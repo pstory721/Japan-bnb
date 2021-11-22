@@ -48,7 +48,7 @@ export function UpdateForm({id}) {
                     required
                 />
                  </label>
-            <button id="submit" type="submit">Change name, and price per night</button>
+            <button id="submit" type="submit">Edit spot </button>
         </form>
         </div>
     )

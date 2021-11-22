@@ -1,7 +1,33 @@
 /* TODO Add site wide styles */
-body{
-    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
-    background-color: black;
-    color:whitesmoke;
-    margin: 0
+body {
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif;
+  background-color: black;
+  color: whitesmoke;
+  margin: 0;
+}
+Button {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  line-height: 16px;
+  padding: 11px;
+  border-radius: 12px;
+  font-family: Georgia, serif;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  background-image: url("https://res.cloudinary.com/dveuedvvm/image/upload/v1637562237/1200px-Flag_of_Japan.svg_cmtoo9.png");
+  background-repeat: no-repeat;
+  background-size: 100% 40px;
+  box-shadow: rgba(0, 0, 0, 0.24) 4px 2px 0px 1px;
+  border: 0px ridge rgb(28, 110, 164);
+  display: inline-block;
+}
+Button:hover {
+  background: #929292a4;
+}
+Button:active {
+  background: #ffffff;
 }

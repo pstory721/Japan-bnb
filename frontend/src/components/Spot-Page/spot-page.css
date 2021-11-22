@@ -1,0 +1,18 @@
+.out{
+    height:50%;
+    width:75%;
+display:flex;
+flex-direction:column;
+justify-content: center;
+align-items: center;
+}
+
+.sillyme{
+    margin:0 auto 0;
+    display:flex;
+    height: 100%;
+    width:75%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

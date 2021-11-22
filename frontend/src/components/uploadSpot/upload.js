@@ -64,7 +64,7 @@ export function UploadForm() {
 
     };
      await dispatch(PostASpot(payload));
-    history.push("/home");
+    history.push("/search");
   };
 
   return (

@@ -26,8 +26,8 @@ export function Search() {
         {searchSpots?.map((spot) => (
           <Link to={`spot-page/${spot.id}`}>
             <div className='bleh'>
-            <img className = 'pho' src={spot?.image_url} alt="whoops that broke"/>
-            <h2> {spot?.name} <br></br>{spot.price} a night </h2>
+            <img className = 'pho' src={spot?.image_url} alt="whoops that broke"/> <br></br>
+            <h2 className="jacob"> {spot?.name}  ${spot.price} a night </h2>
 
             </div>
             </Link>
@@ -35,7 +35,7 @@ export function Search() {
       </div>
       <div className="map">
         <MapContainer />
-          
+
       </div>
     </div>
   );
