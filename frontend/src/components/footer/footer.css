@@ -1,0 +1,40 @@
+.footer{
+    color: white;
+    background-color: rgb(49, 44, 44);
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.©{
+    color: rgb(255, 0, 0);
+}
+
+.cont{
+    margin-left: 10px;
+}
+
+
+.pat{
+ margin-left: 10px;
+    margin-right: 10px;
+}
+
+.sam{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.g-hub{
+    margin-left: 10px;
+}
+
+.linked{
+    margin-left: 10px;
+    margin-right: 10px;
+}

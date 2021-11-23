@@ -36,7 +36,7 @@ function Navigation({ isLoaded }) {
     <>
       <img className="sam"src=""  alt="" ></img>
       <NavLink id='fu' exact to="/home">
-        JapanBnB
+        <img src="https://res.cloudinary.com/dveuedvvm/image/upload/v1637619426/4564414631_yscaof.png" alt="whoops that broke"></img>
       </NavLink>
       </>
     );

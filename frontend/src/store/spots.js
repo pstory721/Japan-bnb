@@ -38,7 +38,7 @@ const AddSpot = (Spot) => {
 }
 
 export const PostABooking = (input) => async (dispatch) => {
-  const response = await csrfFetch(`/api/spots`, {
+  const response = await csrfFetch(`/api/booking`, {
     method: "POST",
     body: JSON.stringify(input),
   });

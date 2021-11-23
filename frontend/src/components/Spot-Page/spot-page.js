@@ -7,6 +7,7 @@ import ReviewForm from "./review";
 import { DeleteAReview, GetAllReviews } from "../../store/review";
 import EditForm from "./edit-review";
 import "./spot-page.css"
+import { BookingForm } from "./booking";
 
 export function SpotPage() {
   const history = useHistory();
@@ -71,6 +72,7 @@ export function SpotPage() {
         ))}
         {singleSpot?.map((spot) => spot.name)}
       </div>
+      <BookingForm id={id} />
       <div>
         {userCheck}
         {otherCheck}

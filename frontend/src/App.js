@@ -11,6 +11,7 @@ import {Search} from './components/Search/search'
 import { SpotPage } from './components/Spot-Page/spot-page';
 import { UploadForm } from './components/uploadSpot/upload';
 import MapContainer from './components/Maps';
+import Footer from './components/footer/footer';
 function App() {
   const dispatch = useDispatch();
   const [isLoaded, setIsLoaded] = useState(false);
@@ -37,7 +38,9 @@ function App() {
             < UploadForm />
           </Route>
         </Switch>
+
       )}
+      <Footer />
     </>
   );
 }
