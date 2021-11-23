@@ -4,10 +4,14 @@ const usersRouter = require("./users.js");
 const homeRouter = require('./home')
 const spotRouter = require('./spots')
 const reviewRouter = require('./reviews')
+const mapsRouter = require('./map');
+const bookingRouter = require('./booking')
 router.use('/home',homeRouter)
 router.use('/spots',spotRouter)
 router.use('/review',reviewRouter)
+router.use('/maps', mapsRouter);
 
+router.use('/booking', bookingRouter);
 
 
 
