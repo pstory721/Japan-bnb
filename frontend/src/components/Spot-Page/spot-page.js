@@ -90,7 +90,7 @@ export function SpotPage() {
               id="splashlinkbuttons"
               onClick={() => {
                 dispatch(DeleteAReview(review.id));
-                history.push(`/spot-page/${singleSpot.id}`);
+                history.push(`/spot-page/${id}`);
               }}
             >
               X
