@@ -53,15 +53,5 @@ router.post('/', asyncHandler(async function (req, res) {
       return res.json({newSpot});
   }))
 
-  router.post('/', asyncHandler(async function (req, res) {
-    const {spotId,userId,start_date,end_date} = req.body
-    const newBooking = await rsvp.create({
-      spotId,
-      userId,
-      start_date,
-      end_date
-    }
-      )
-      return res.json({newBooking});
-  }))
+
 module.exports = router;

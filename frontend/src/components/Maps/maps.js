@@ -1,4 +1,4 @@
-/*global google*/
+
 import React, { useEffect } from "react";
 import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
 import { useDispatch, useSelector } from "react-redux";
