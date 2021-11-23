@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import SignupFormModal from "../SignupFormModal";
 import "./home.css";
-
+//test/
 export function Home() {
   const dispatch = useDispatch();
   const sessionUser = useSelector((state) => state.session.user);
