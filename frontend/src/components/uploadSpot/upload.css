@@ -1,0 +1,47 @@
+.upload{
+    background-color: rgb(51, 51, 51);
+    width: 20%;
+    margin: 100px auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.picked{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+}
+
+#submit{
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.upload-labs{
+    font-family: 'Special Elite', cursive;
+    font-size: 20px;
+}
+
+.upload-labs1{
+    font-family: 'Special Elite', cursive;
+    font-size: 24px;
+}
+.whateveriwant{
+text-align: center;
+
+}

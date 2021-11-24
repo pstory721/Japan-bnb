@@ -3,6 +3,7 @@ import { useHistory } from "react-router-dom";
 import { useDispatch,useSelector } from "react-redux";
 import { PostASpot } from "../../store/spots";
 import { getKey } from '../../store/map';
+import "./upload.css"
 
 
 export function UploadForm() {
@@ -50,6 +51,7 @@ export function UploadForm() {
     setErrors(errors);
     const response = await fetch (`https://maps.googleapis.com/maps/api/geocode/json?address=${address}&key=${key}`)
     const data = await response.json()
+    console.log(data)
     const lat = data.results[0].geometry.location.lat
     const lng = data.results[0].geometry.location.lng
     const payload = {
@@ -68,62 +70,68 @@ export function UploadForm() {
   };
 
   return (
-    <div className='ididit'>
-    <div className="idkwhattodo">
-      <h1>Create your Venue Below</h1>
+    <div className='upload'>
+
+      <h1 className="whateveriwant">Create your Spot Below</h1>
       <form className="secondDiv" onSubmit={handleSubmit}>
+        <div className="inner">
         <ul className="errors">
           {errors.map((error) => (
             <li key={error}>{error}</li>
           ))}
         </ul>
-        <div className='col-75'>
+
         <label>
           Name
+          <br></br>
           <input
+          className='input'
             type="text"
             name="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
         </label>
-        </div>
-        <div className='col-75'>
+
         <label>
           Address
+          <br></br>
           <input
+          className='input'
             type="text"
             name="address"
             value={address}
             onChange={(e) => setAddress(e.target.value)}
           />
         </label>
-        </div>
-        <div className='col-75'>
+
         <label>
           Cover Picture
+          <br></br>
           <input
+          className='input'
             type="text"
             name="image"
             value={image_url}
             onChange={(e) => setImage_url(e.target.value)}
           />
         </label>
-        </div>
-        <div className='col-75'>
+
         <label>
           City
+          <br></br>
           <input
+          className='input'
             type="text"
             name="city"
             value={city}
             onChange={(e) => setCity(e.target.value)}
           />
         </label>
-        </div>
-        <div className='col-75'>
+
         <label>
           Price
+          <br></br>
           <input
             type="number"
             name="price"
@@ -131,14 +139,14 @@ export function UploadForm() {
             onChange={(e) => setPrice(e.target.value)}
           />
         </label>
-        </div>
 
 
-        <button type="submit" disabled={errors.length > 0}>
+        <button  id="submit" type="submit" disabled={errors.length > 0}>
           Create
         </button>
+        </div>
       </form>
     </div>
-    </div>
+
   );
 }
