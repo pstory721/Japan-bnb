@@ -1,18 +1,68 @@
-.out{
-    height:50%;
-    width:75%;
-display:flex;
-flex-direction:column;
-justify-content: center;
-align-items: center;
+.u {
+  width: 500px;
+  float: left;
+  display: flex;
+  justify-content:space-between;
 }
 
-.sillyme{
-    margin:0 auto 0;
-    display:flex;
-    height: 100%;
-    width:75%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.out {
+  position: relative;
+  left: 630px;
+  top: 40px;
 }
+
+.sillyme {
+  margin: 0 auto 0;
+  display: flex;
+  height: 100%;
+  width: 75%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fam {
+}
+.true {
+  position: absolute;
+  top: 135px;
+  left: 230px;
+  height: 500px;
+  width: 600px;
+}
+.pleg {
+  height: 200px;
+  width: 300px;
+}
+#gh {
+  list-style: none;
+}
+.bok{
+    position: absolute;
+    top: 625px;
+    left: 230px;
+
+}
+.hdf{
+    position: absolute;
+    top: 640px;
+    left: 450px;
+}
+
+.review{
+    position: absolute;
+    left: 1450px;
+    bottom: 200px;
+}
+.all{
+  border-bottom: 1px solid whitesmoke;
+
+}
+ .yeah{
+    position: sticky;
+    float: right;
+    margin-left:1100px;
+    margin-top: 200px;
+ }
+ .e{
+   margin-bottom: 5px;
+ }

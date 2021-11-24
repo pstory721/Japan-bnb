@@ -10,7 +10,25 @@ module.exports = {
           image_url:"https://www.japan-guide.com/thumb/XYZeXYZe2158_1680b.jpg",
           createdAt: new Date(),
           updatedAt: new Date(),
-        }
+        },
+        {
+          spotId:1,
+          image_url:"https://www.japan-guide.com/thumb/XYZeXYZe2158_1680b.jpg",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          spotId:1,
+          image_url:"https://www.japan-guide.com/thumb/XYZeXYZe2158_1680b.jpg",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          spotId:1,
+          image_url:"https://www.japan-guide.com/thumb/XYZeXYZe2158_1680b.jpg",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
 
 
       ], {});

@@ -6,7 +6,7 @@ import { UpdateForm } from "./edit-spot";
 import ReviewForm from "./review";
 import { DeleteAReview, GetAllReviews } from "../../store/review";
 import EditForm from "./edit-review";
-import "./spot-page.css"
+import "./spot-page.css";
 import { BookingForm } from "./booking";
 
 export function SpotPage() {
@@ -47,7 +47,7 @@ export function SpotPage() {
   });
 
   const [showForm, setShowForm] = useState(false);
-
+  const [showForm2, setShowForm2] = useState(false);
   useEffect(() => {
     dispatch(GetSpot(id));
   }, [dispatch]);
@@ -58,32 +58,55 @@ export function SpotPage() {
 
   return (
     <div className="sillyme">
+      <div className="fam">
+        {singleSpot?.map((spot) => (
+          <img className="true" src={`${spot.image_url}`}></img>
+        ))}
+        {singleSpot?.map((spot) => <h1>{spot.name}</h1>)}
+      </div>
       <div className="out">
         {images?.map((image) => (
-          <div>
-            <img
+          <div className="u">
+            <ul>
+              <li id="gh">
+            <img className="pleg"
               src={image.image_url}
-              width="200px"
-              height="200px"
               alt="art"
             ></img>
+            </li>
+            </ul>
             <br></br>
           </div>
         ))}
-        {singleSpot?.map((spot) => spot.name)}
       </div>
+      <div className="bok">
       <BookingForm id={id} />
-      <div>
+
+        </div>
+      <div className="hdf">
         {userCheck}
-        {otherCheck}
+        <button
+              className="e"
+              onClick={() =>
+                showForm2 === false ? setShowForm2(true) : setShowForm2(false)
+              }
+              id="splashlinkbuttons"
+            >
+              Edit
+            </button>
+            {singleSpot?.map((spot) => (
+        showForm2 && <UpdateForm id={spot.userId} />))}
       </div>
       <div>
-        <div>
+        <div className="review">
           <ReviewForm id={id} />
         </div>
 
+          <div className="yeah">
+          <h1> reviews </h1>
         {allReviews?.map((review) => (
-          <div className="">
+          <div className="all">
+            <h2> username </h2>
             <p className="">{review.review}</p>
             <button
               className="x"
@@ -107,6 +130,7 @@ export function SpotPage() {
             {showForm && <EditForm reviewId={review.id} />}
           </div>
         ))}
+        </div>
       </div>
     </div>
   );

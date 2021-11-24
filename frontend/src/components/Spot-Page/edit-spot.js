@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useDispatch,useSelector } from "react-redux";
 import { useHistory } from 'react-router-dom';
 import {UpdateASpot} from "../../store/spots"
+import "./edit-spot.css"
 
 export function UpdateForm({id}) {
     const singleSpot = useSelector((state) => state.Spot.spots);
