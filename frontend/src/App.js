@@ -12,6 +12,7 @@ import { SpotPage } from "./components/Spot-Page/spot-page";
 import { UploadForm } from "./components/uploadSpot/upload";
 import MapContainer from "./components/Maps";
 import Footer from "./components/footer/footer";
+import User from "./components/user-page/user-page";
 function App() {
   const dispatch = useDispatch();
   const [isLoaded, setIsLoaded] = useState(false);
@@ -39,6 +40,9 @@ function App() {
           </Route>
           <Route path="/upload">
             <UploadForm />
+          </Route>
+          <Route path="/user">
+            <User />
           </Route>
         </Switch>
       )}

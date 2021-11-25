@@ -1,5 +1,6 @@
 import { csrfFetch } from "./csrf";
 const SPOT_FILL = "session/ShowSpot";
+const BOOKING_FILL = "session/ShowBooking";
 const DELETE_SPOT = "session/DeleteSpot";
 const UPDATE_SPOT = "session/UpdateSpot";
 const BOOK_SPOT = "session/BookSpot";
@@ -10,6 +11,13 @@ const ShowSpot = (spots ,bookings,images) => {
     spots,
     bookings,
     images
+  };
+};
+const ShowBookings = (bookings) => {
+  return {
+    type: BOOKING_FILL,
+    bookings
+
   };
 };
 const DeleteSpot = (spots) => {
@@ -65,6 +73,13 @@ export const GetSpot = (id) => async (dispatch) => {
     dispatch(ShowSpot(spots,bookings,images));
   }
 };
+export const GetBookings = () => async (dispatch) => {
+  const response = await fetch(`/api/booking`);
+  if (response.ok) {
+    const { bookings  } = await response.json();
+    dispatch(ShowBookings(bookings));
+  }
+};
 export const DeleteASpot = (id) => async (dispatch) => {
   const response = await csrfFetch(`/api/spots/${id}`, {
     method: "DELETE",
@@ -96,6 +111,10 @@ const SingleSpotReducer = (state = initialState, action) => {
       newState.spots = [...state.spots, action.spots];
       newState.images = action.images;
       return newState;
+    case BOOKING_FILL:
+    newState = Object.assign({}, state);
+    newState.bookings =  action.bookings;
+    return newState;
     case DELETE_SPOT:
         newState = Object.assign({}, state);
         newState.spots = state.spots?.filter(({ id }) => id !== action.spots);

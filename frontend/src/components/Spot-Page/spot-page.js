@@ -26,7 +26,7 @@ export function SpotPage() {
 
   let userCheck;
   singleSpot?.map((spot) => {
-    if (sessionUser.id === spot.userId) {
+    if (sessionUser?.id === spot?.userId) {
       userCheck = (
         <button
           id=""
