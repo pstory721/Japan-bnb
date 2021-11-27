@@ -6,11 +6,12 @@ const spotRouter = require('./spots')
 const reviewRouter = require('./reviews')
 const mapsRouter = require('./map');
 const bookingRouter = require('./booking')
+const searchRouter = require('./search')
 router.use('/home',homeRouter)
 router.use('/spots',spotRouter)
 router.use('/review',reviewRouter)
 router.use('/maps', mapsRouter);
-
+router.use('/search', searchRouter);
 router.use('/booking', bookingRouter);
 
 

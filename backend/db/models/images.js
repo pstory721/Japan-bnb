@@ -4,7 +4,7 @@ module.exports = (sequelize, DataTypes) => {
     spotId: {
       allowNull: false,
       type: DataTypes.INTEGER,
-      refrences: {model:"Spots"}
+      references: {model:"Spots"}
     },
     image_url: {
       allowNull: false,

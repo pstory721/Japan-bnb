@@ -11,7 +11,7 @@ module.exports = {
       spotId: {
         allowNull: false,
         type: Sequelize.INTEGER,
-        refrences: {model:"Spots"}
+        references: {model:"Spots"}
       },
       image_url: {
         allowNull: false,

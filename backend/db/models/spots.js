@@ -4,7 +4,7 @@ module.exports = (sequelize, DataTypes) => {
     userId: {
       allowNull: false,
       type: DataTypes.INTEGER,
-      refrences: {model:"users"}
+      references: {model:"Users"}
     },
     address: {
       allowNull: false,
@@ -21,6 +21,10 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.DECIMAL
     },
     name: {
+      allowNull: false,
+      type: DataTypes.STRING
+    },
+    description: {
       allowNull: false,
       type: DataTypes.STRING
     },

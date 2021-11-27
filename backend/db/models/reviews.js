@@ -9,7 +9,7 @@ module.exports = (sequelize, DataTypes) => {
     spotId: {
       allowNull: false,
       type: DataTypes.INTEGER,
-      refrences: {model:"Spots"}
+      references: {model:"Spots"}
     },
     review: {
       allowNull: false,

@@ -11,7 +11,7 @@ module.exports = {
       userId: {
         allowNull: false,
         type: Sequelize.INTEGER,
-        refrences: {model:"users"}
+        references: {model:"Users"}
       },
       address: {
         allowNull: false,
@@ -28,6 +28,10 @@ module.exports = {
         type: Sequelize.DECIMAL
       },
       name: {
+        allowNull: false,
+        type: Sequelize.STRING
+      },
+      description: {
         allowNull: false,
         type: Sequelize.STRING
       },

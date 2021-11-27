@@ -5,12 +5,14 @@ import HomeReducer from './home';
 import SingleSpotReducer from './spots';
 import ReviewReducer from './review';
 import mapsReducer from './map';
+import searchReducer from './search';
 const rootReducer = combineReducers({
   session:sessionReducer,
   Home: HomeReducer,
   Spot: SingleSpotReducer,
   Review: ReviewReducer,
-  Maps: mapsReducer
+  Maps: mapsReducer,
+  Search: searchReducer,
 });
 
 let enhancer;
