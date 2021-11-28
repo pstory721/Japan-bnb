@@ -39,3 +39,9 @@ color: whitesmoke;
   color: whitesmoke;
 
 }
+.row{
+  display : flex;
+  flex-direction: row;
+  justify-content: center;
+
+}

@@ -124,12 +124,15 @@ function Navigation({ isLoaded }) {
       <div id="left">
         <div> {isLoaded} </div>
 
-        <div>
+        <div className="row">
+          <div>
+            {search}
+          </div>
           {signup}
           {demoButton}
           <div>
             {upload}
-            {search}
+
             {sessionLinks}
           </div>
         </div>
