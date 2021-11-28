@@ -22,15 +22,15 @@ if (!sessionUser) {
 
   let button3;
   if (sessionUser) {
-    button3 = <button className="link"><Link to="search">Ready to see natural beauty?</Link></button>
+    button3 = <button className="link"><Link to="spots">Ready to see natural beauty?</Link></button>
   }
  let button2;
   if (sessionUser) {
-    button2 =  <button className="link"><Link to="search"> Ready to be unique?</Link></button>
+    button2 =  <button className="link"><Link to="spots"> Ready to be unique?</Link></button>
   }
  let button1;
   if (sessionUser) {
-    button1 = <button className="link"><Link to="search">Ready to visit cities?</Link></button>
+    button1 = <button className="link"><Link to="spots">Ready to visit cities?</Link></button>
   }
 
   return (

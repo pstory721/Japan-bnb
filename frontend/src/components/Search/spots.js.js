@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import MapContainer from "../Maps/index"
 import "./search.css"
-export function Search() {
+export function Spots() {
   const dispatch = useDispatch();
   const sessionUser = useSelector((state) => state.session.user);
   const searchSpots = useSelector((state) => state.Home.spots);

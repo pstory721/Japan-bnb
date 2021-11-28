@@ -7,7 +7,8 @@ import * as sessionActions from "./store/session";
 import Navigation from "./components/Navigation";
 import { Modal } from "./context/Modal";
 import { Home } from "./components/home/home";
-import { Search } from "./components/Search/search";
+import { Spots } from "./components/Search/spots.js";
+import { Search } from "./components/ActualSearch/actual";
 import { SpotPage } from "./components/Spot-Page/spot-page";
 import { UploadForm } from "./components/uploadSpot/upload";
 import MapContainer from "./components/Maps";
@@ -31,6 +32,9 @@ function App() {
           </Route>
           <Route path="/home">
             <Home />
+          </Route>
+          <Route path="/spots">
+            <Spots />
           </Route>
           <Route path="/search">
             <Search />
