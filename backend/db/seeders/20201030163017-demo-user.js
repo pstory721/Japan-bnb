@@ -20,6 +20,84 @@ module.exports = {
         username: 'FakeUser2',
         hashedPassword: bcrypt.hashSync(faker.internet.password()),
       },
+      {
+        email: faker.internet.email(),
+        username: 'FakeUser4',
+        hashedPassword: bcrypt.hashSync(faker.internet.password()),
+      },
+      {
+        email: faker.internet.email(),
+        username: 'FakeUser5',
+        hashedPassword: bcrypt.hashSync(faker.internet.password()),
+      },
+      {
+        email: faker.internet.email(),
+        username: 'FakeUser6',
+        hashedPassword: bcrypt.hashSync(faker.internet.password()),
+      },
+      {
+        email: faker.internet.email(),
+        username: 'Joe',
+        hashedPassword: bcrypt.hashSync(faker.internet.password()),
+      },
+      {
+        email: faker.internet.email(),
+        username: 'FakeUser8',
+        hashedPassword: bcrypt.hashSync(faker.internet.password()),
+      },
+      {
+        email: faker.internet.email(),
+        username: 'FakeUser9',
+        hashedPassword: bcrypt.hashSync(faker.internet.password()),
+      },
+      {
+        email: faker.internet.email(),
+        username: 'FakeUser10',
+        hashedPassword: bcrypt.hashSync(faker.internet.password()),
+      },
+      {
+        email: faker.internet.email(),
+        username: 'FakeUser11',
+        hashedPassword: bcrypt.hashSync(faker.internet.password()),
+      },
+      {
+        email: faker.internet.email(),
+        username: 'FakeUser12',
+        hashedPassword: bcrypt.hashSync(faker.internet.password()),
+      },
+      {
+        email: faker.internet.email(),
+        username: 'FakeUser13',
+        hashedPassword: bcrypt.hashSync(faker.internet.password()),
+      },    {
+        email: faker.internet.email(),
+        username: 'FakeUser14',
+        hashedPassword: bcrypt.hashSync(faker.internet.password()),
+      },    {
+        email: faker.internet.email(),
+        username: 'FakeUser15',
+        hashedPassword: bcrypt.hashSync(faker.internet.password()),
+      },    {
+        email: faker.internet.email(),
+        username: 'FakeUser16',
+        hashedPassword: bcrypt.hashSync(faker.internet.password()),
+      },    {
+        email: faker.internet.email(),
+        username: 'FakeUser17',
+        hashedPassword: bcrypt.hashSync(faker.internet.password()),
+      },    {
+        email: faker.internet.email(),
+        username: 'FakeUser18',
+        hashedPassword: bcrypt.hashSync(faker.internet.password()),
+      },    {
+        email: faker.internet.email(),
+        username: 'FakeUser19',
+        hashedPassword: bcrypt.hashSync(faker.internet.password()),
+      },    {
+        email: faker.internet.email(),
+        username: 'FakeUser20',
+        hashedPassword: bcrypt.hashSync(faker.internet.password()),
+      },
     ], {});
   },
 
