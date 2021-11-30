@@ -7,12 +7,12 @@ import "./edit-spot.css"
 export function UpdateForm({id}) {
     const singleSpot = useSelector((state) => state.Spot.spots);
     const dispatch = useDispatch()
-    const [name,setName] = useState("");
+    const [address,setAddress] = useState("");
     const [price,setPrice] = useState("");
     const history = useHistory()
    let spot = Object.assign({}, ...singleSpot)
    let userId = spot.userId
-   let address =spot.address
+   let name =spot.name
    let city = spot.city
    let lat= spot.lat
    let lng= spot.lng
@@ -33,9 +33,9 @@ export function UpdateForm({id}) {
                 <input
                     id='name'
                     type="text"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    placeholder="New name"
+                    value={address}
+                    onChange={(e) => setAddress(e.target.value)}
+                    placeholder="New address"
                     required
                 />
                  </label>

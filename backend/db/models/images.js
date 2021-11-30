@@ -6,7 +6,7 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.INTEGER,
       references: {model:"Spots"}
     },
-    image_url: {
+    imageurl: {
       allowNull: false,
       type: DataTypes.STRING
     },

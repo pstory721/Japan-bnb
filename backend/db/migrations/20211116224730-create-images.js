@@ -13,7 +13,7 @@ module.exports = {
         type: Sequelize.INTEGER,
         references: {model:"Spots"}
       },
-      image_url: {
+      imageurl: {
         allowNull: false,
         type: Sequelize.STRING
       },

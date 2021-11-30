@@ -31,23 +31,28 @@
 .bleh{
     margin-top:10px;
     height: 400px;
-    width:400px;
+    width:600px;
     border:1px solid whitesmoke;
     display: flex;
     flex-direction: column;
     align-items:center;
     justify-content:center;
+
 }
 .jacob{
+  width:400px;
     color: whitesmoke;
     margin-bottom: 40px;
-    text-align: unset;
+    text-align: center;
     float:right;
-    overflow: hidden;
+    overflow-wrap:break-word;
+
+
 }
 
 .fourtwentysixtynine{
     padding-top: 5250px;
+
 }
 .cuck{
     position: relative;

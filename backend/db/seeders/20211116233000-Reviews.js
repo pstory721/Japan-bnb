@@ -6,6 +6,7 @@ module.exports = {
       return queryInterface.bulkInsert('Reviews', [
         {
           userId:1,
+          username:faker.internet.userName(),
           spotId:1,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -13,6 +14,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:1,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -20,6 +22,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:1,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -27,6 +30,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:1,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -34,6 +38,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:1,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -41,6 +46,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:1,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -48,6 +54,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:1,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -55,6 +62,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:2,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -62,6 +70,7 @@ module.exports = {
         },
         {
           userId:1,
+          username:faker.internet.userName(),
           spotId:2,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -69,6 +78,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:2,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -76,6 +86,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:2,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -83,6 +94,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:2,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -90,6 +102,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:2,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -97,6 +110,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:2,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -104,6 +118,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:2,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -111,6 +126,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:2,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -118,6 +134,7 @@ module.exports = {
         },
         {
           userId:1,
+          username:faker.internet.userName(),
           spotId:3,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -125,6 +142,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:3,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -132,6 +150,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:3,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -139,6 +158,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:3,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -146,6 +166,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:3,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -153,6 +174,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:3,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -160,6 +182,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:3,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -167,6 +190,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:3,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -174,6 +198,7 @@ module.exports = {
         },
         {
           userId:1,
+          username:faker.internet.userName(),
           spotId:4,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -181,6 +206,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:4,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -188,6 +214,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:4,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -195,6 +222,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:4,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -202,6 +230,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:4,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -209,6 +238,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:4,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -216,6 +246,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:4,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -223,6 +254,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:4,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -230,6 +262,7 @@ module.exports = {
         },
         {
           userId:1,
+          username:faker.internet.userName(),
           spotId:5,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -237,6 +270,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:5,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -244,6 +278,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:5,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -251,6 +286,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:5,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -258,6 +294,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:5,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -265,6 +302,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:5,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -272,6 +310,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:5,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -279,6 +318,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:5,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -286,6 +326,7 @@ module.exports = {
         },
         {
           userId:1,
+          username:faker.internet.userName(),
           spotId:6,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -293,6 +334,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:6,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -300,6 +342,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:6,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -307,6 +350,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:6,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -314,6 +358,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:6,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -321,6 +366,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:6,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -328,6 +374,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:6,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -335,6 +382,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:6,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -342,6 +390,7 @@ module.exports = {
         },
         {
           userId:1,
+          username:faker.internet.userName(),
           spotId:7,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -349,6 +398,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:7,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -356,6 +406,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:7,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -363,6 +414,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:7,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -370,6 +422,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:7,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -377,6 +430,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:7,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -384,6 +438,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:7,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -391,6 +446,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:7,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -398,6 +454,7 @@ module.exports = {
         },
         {
           userId:1,
+          username:faker.internet.userName(),
           spotId:8,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -405,6 +462,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:8,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -412,6 +470,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:8,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -419,6 +478,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:8,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -426,6 +486,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:8,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -433,6 +494,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:8,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -440,6 +502,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:8,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -447,6 +510,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:8,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -454,6 +518,7 @@ module.exports = {
         },
         {
           userId:1,
+          username:faker.internet.userName(),
           spotId:9,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -461,6 +526,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:9,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -468,6 +534,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:9,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -475,6 +542,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:9,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -482,6 +550,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:9,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -489,6 +558,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:9,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -496,6 +566,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:9,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -503,6 +574,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:9,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -510,6 +582,7 @@ module.exports = {
         },
         {
           userId:1,
+          username:faker.internet.userName(),
           spotId:10,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -517,6 +590,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:10,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -524,6 +598,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:10,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -531,6 +606,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:10,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -538,6 +614,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:10,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -545,6 +622,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:10,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -552,6 +630,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:10,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -559,6 +638,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:10,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -566,6 +646,7 @@ module.exports = {
         },
         {
           userId:1,
+          username:faker.internet.userName(),
           spotId:11,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -573,6 +654,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:11,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -580,6 +662,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:11,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -587,6 +670,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:11,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -594,6 +678,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:11,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -601,6 +686,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:11,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -608,6 +694,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:11,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -615,6 +702,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:11,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -622,6 +710,7 @@ module.exports = {
         },
         {
           userId:1,
+          username:faker.internet.userName(),
           spotId:12,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -629,6 +718,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:12,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -636,6 +726,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:12,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -643,6 +734,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:12,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -650,6 +742,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:12,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -657,6 +750,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:12,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -664,6 +758,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:12,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -671,6 +766,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:12,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -678,6 +774,7 @@ module.exports = {
         },
         {
           userId:1,
+          username:faker.internet.userName(),
           spotId:13,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -685,6 +782,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:13,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -692,6 +790,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:13,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -699,6 +798,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:13,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -706,6 +806,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:13,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -713,6 +814,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:13,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -720,6 +822,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:13,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -727,6 +830,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:13,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -734,6 +838,7 @@ module.exports = {
         },
         {
           userId:1,
+          username:faker.internet.userName(),
           spotId:14,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -741,6 +846,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:14,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -748,6 +854,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:14,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -755,6 +862,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:14,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -762,6 +870,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:14,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -769,6 +878,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:14,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -776,6 +886,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:14,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -783,6 +894,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:14,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -790,6 +902,7 @@ module.exports = {
         },
         {
           userId:1,
+          username:faker.internet.userName(),
           spotId:15,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -797,6 +910,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:15,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -804,6 +918,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:15,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -811,6 +926,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:15,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -818,6 +934,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:15,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -825,6 +942,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:15,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -832,6 +950,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:15,
           review:faker.lorem.sentence(),
           createdAt: new Date(),
@@ -839,6 +958,7 @@ module.exports = {
         },
         {
           userId:2,
+          username:faker.internet.userName(),
           spotId:15,
           review:faker.lorem.sentence(),
           createdAt: new Date(),

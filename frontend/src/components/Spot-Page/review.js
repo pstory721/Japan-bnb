@@ -11,6 +11,7 @@ function ReviewForm({id}) {
     const [review, setReview] = useState("")
     const [spotId,setSpotId] = useState(id)
     const [userId,setUserId] = useState(sessionUser.id)
+    const [username,setUserName] = useState(sessionUser.username)
     const [errors, setErrors] = useState([]);
     const history = useHistory()
 
@@ -21,7 +22,7 @@ function ReviewForm({id}) {
           errors.push("review is required");
         }
         setErrors(errors);
-        let payload = {review, userId,spotId}
+        let payload = {review, userId, username,spotId}
         dispatch(AddAReview(payload))
 
         history.push(`/spot-page/${id}`)

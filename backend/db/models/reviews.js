@@ -4,7 +4,12 @@ module.exports = (sequelize, DataTypes) => {
     userId: {
       allowNull: false,
       type: DataTypes.INTEGER,
-      refrences: {model:"users"}
+      refrences: {model:"Users"}
+    },
+    username: {
+      allowNull: false,
+      type: DataTypes.STRING,
+      refrences: {model:"Users"}
     },
     spotId: {
       allowNull: false,

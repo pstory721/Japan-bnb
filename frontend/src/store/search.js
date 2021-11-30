@@ -24,7 +24,7 @@ const search = (state = initialState, action) => {
   switch (action.type) {
     case GET_SPOTS:
         newState = Object.assign({}, state);
-        newState.spots = [...state.spots, action.spots]
+        newState.spots = [action.spots]
         return newState;
     default:
       return state;

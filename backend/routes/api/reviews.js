@@ -34,9 +34,10 @@ router.put("/:id", asyncHandler(async function (req, res) {
   return res.json({UpdatedReview});
 }));
 router.post('/', asyncHandler(async function (req, res) {
-  const {userId,spotId,review} = req.body
+  const {userId,username,spotId,review} = req.body
   const newReview = await Review.create({
       userId,
+      username,
       spotId,
       review
 

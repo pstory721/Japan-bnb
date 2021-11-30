@@ -1,10 +1,9 @@
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
-import { useDispatch,useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { PostASpot } from "../../store/spots";
-import { getKey } from '../../store/map';
-import "./upload.css"
-
+import { getKey } from "../../store/map";
+import "./upload.css";
 
 export function UploadForm() {
   const dispatch = useDispatch();
@@ -16,9 +15,12 @@ export function UploadForm() {
   const [city, setCity] = useState("");
   const [price, setPrice] = useState("");
   const [image_url, setImage_url] = useState("");
+  const [imageurlone, setImageurlone] = useState("");
+  const [imageurltwo, setImageurltwo] = useState("");
+  const [imageurlthree, setImageurlthree] = useState("");
+  const [imageurlfour, setImageurlfour] = useState("");
   const [errors, setErrors] = useState([]);
   let history = useHistory();
-
 
   useEffect(() => {
     if (!key) {
@@ -48,117 +50,180 @@ export function UploadForm() {
     if (price === 0 || price === null) {
       errors.push("Please add a Price, it cannot be zero");
     }
+    if (imageurlone === "") {
+      errors.push("Please add a image");
+    }
+    if (imageurltwo === "") {
+      errors.push("Please add a image");
+    }
+
+    if (imageurlthree === "") {
+      errors.push("Please add a image");
+    }
+
+    if (imageurlfour === "") {
+      errors.push("Please add a image");
+    }
+
 
     setErrors(errors);
-    const response = await fetch (`https://maps.googleapis.com/maps/api/geocode/json?address=${address}&key=${key}`)
-    const data = await response.json()
-    console.log(data)
-    const lat = data.results[0].geometry.location.lat
-    const lng = data.results[0].geometry.location.lng
+    const response = await fetch(
+      `https://maps.googleapis.com/maps/api/geocode/json?address=${address}&key=${key}`
+    );
+    const data = await response.json();
+    console.log(data);
+    const lat = data.results[0].geometry.location.lat;
+    const lng = data.results[0].geometry.location.lng;
     const payload = {
-      userId:sessionUser.id ,
+      userId: sessionUser.id,
       name,
       address,
       city,
       lat,
       lng,
       price,
-      image_url
+      image_url,
+      imageurlone,
+      imageurltwo,
+      imageurlthree,
+      imageurlfour,
 
     };
-     await dispatch(PostASpot(payload));
+    await dispatch(PostASpot(payload));
     history.push("/search");
   };
 
   return (
-    <div className='upload'>
-
+    <div className="upload">
       <h1 className="whateveriwant">Create your Spot Below</h1>
       <form className="secondDiv" onSubmit={handleSubmit}>
         <div className="inner">
-        <ul className="errors">
-          {errors.map((error) => (
-            <li key={error}>{error}</li>
-          ))}
-        </ul>
+          <ul className="errors">
+            {errors.map((error) => (
+              <li key={error}>{error}</li>
+            ))}
+          </ul>
 
-        <label>
-          Name
-          <br></br>
-          <input
-          className='input'
-            type="text"
-            name="name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-        </label>
-        <label>
-          description
-          <br></br>
-          <input
-          className='input'
-            type="text"
-            name="description"
-            value={description}
-            onChange={(e) => setDescription(e.target.value)}
-          />
-        </label>
+          <label>
+            Name
+            <br></br>
+            <input
+              className="input"
+              type="text"
+              name="name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+          </label>
+          <label>
+            description
+            <br></br>
+            <input
+              className="input"
+              type="text"
+              name="description"
+              value={description}
+              onChange={(e) => setDescription(e.target.value)}
+            />
+          </label>
 
-        <label>
-          Address
-          <br></br>
-          <input
-          className='input'
-            type="text"
-            name="address"
-            value={address}
-            onChange={(e) => setAddress(e.target.value)}
-          />
-        </label>
+          <label>
+            Address
+            <br></br>
+            <input
+              className="input"
+              type="text"
+              name="address"
+              value={address}
+              onChange={(e) => setAddress(e.target.value)}
+            />
+          </label>
 
-        <label>
-          Cover Picture
-          <br></br>
-          <input
-          className='input'
-            type="text"
-            name="image"
-            value={image_url}
-            onChange={(e) => setImage_url(e.target.value)}
-          />
-        </label>
+          <label>
+            Cover Picture
+            <br></br>
+            <input
+              className="input"
+              type="text"
+              name="image"
+              value={image_url}
+              onChange={(e) => setImage_url(e.target.value)}
+            />
+          </label>
 
-        <label>
-          City
-          <br></br>
-          <input
-          className='input'
-            type="text"
-            name="city"
-            value={city}
-            onChange={(e) => setCity(e.target.value)}
-          />
-        </label>
+          <label>
+            City
+            <br></br>
+            <input
+              className="input"
+              type="text"
+              name="city"
+              value={city}
+              onChange={(e) => setCity(e.target.value)}
+            />
+          </label>
 
-        <label>
-          Price
-          <br></br>
-          <input
-            type="number"
-            name="price"
-            value={price}
-            onChange={(e) => setPrice(e.target.value)}
-          />
-        </label>
+          <label>
+            Price
+            <br></br>
+            <input
+              type="number"
+              name="price"
+              value={price}
+              onChange={(e) => setPrice(e.target.value)}
+            />
+          </label>
 
+          <label>
+            Image one
+            <br></br>
+            <input
+              className="input"
+              type="text"
+              name="image one"
+              value={imageurlone}
+              onChange={(e) => setImageurlone(e.target.value)}
+            />
+          </label>
+          <label>
+            Image two
+            <br></br>
+            <input
+              className="input"
+              type="text"
+              name="image two"
+              value={imageurltwo}
+              onChange={(e) => setImageurltwo(e.target.value)}
+            />
+          </label>
+          <label>
+            Image three
+            <br></br>
+            <input
+              className="input"
+              type="text"
+              name="image three"
+              value={imageurlthree}
+              onChange={(e) => setImageurlthree(e.target.value)}
+            />
+          </label>
+          <label>
+            image four
+            <br></br>
+            <input
+              className="input"
+              type="text"
+              name="image four"
+              value={imageurlfour}
+              onChange={(e) => setImageurlfour(e.target.value)}
+            />
+          </label>
 
-        <button  id="submit" type="submit" disabled={errors.length > 0}>
-          Create
-        </button>
+          <button id="submit" type="submit" disabled={errors.length > 0}>
+            Create
+          </button>
         </div>
       </form>
     </div>
-
   );
 }

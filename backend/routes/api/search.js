@@ -15,7 +15,7 @@ router.put(
       if (search !== undefined){
           spots = await Spot.findAll({
               where: {
-                  name :{
+                  address :{
                       [Op.iLike]: `%${search}%`
                   }
               }

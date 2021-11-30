@@ -76,7 +76,7 @@ export function SpotPage() {
         {singleSpot?.map((spot) => (
           <img className="true" src={`${spot.image_url}`}></img>
         ))}
-        <h1>{singleSpot[0]?.name}</h1>
+        <h1>{singleSpot[0]?.address}</h1>
       </div>
       <div className="out">
         {images?.map((image) => (
@@ -116,7 +116,7 @@ export function SpotPage() {
           <h1> reviews </h1>
         {allReviews?.map((review) => (
           <div className="all">
-            <h2> username </h2>
+            <h2> {review.username} </h2>
             <p className="">{review.review}</p>
             <SingleReview id={review.id} />
           </div>

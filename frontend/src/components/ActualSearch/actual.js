@@ -22,7 +22,8 @@ export function Search() {
           <Link to={`spot-page/${spot.id}`}>
             <div className='bleh'>
             <img className = 'pho' src={spot?.image_url} alt="whoops that broke"/> <br></br>
-            <h2 className="jacob"> {spot?.name}  ${spot.price} a night </h2>
+            <h2 className="jacob"> {spot?.address}</h2>
+            <span className="jacob">${spot.price} a night </span>
 
             </div>
             </Link>
