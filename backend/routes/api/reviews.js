@@ -9,7 +9,10 @@ router.get(
   requireAuth,
   asyncHandler(async function (req, res) {
     const reviews = await Review.findAll({
-      where:{spotId:req.params.id}
+      where:{spotId:req.params.id},
+      order: [
+          ['id', 'DESC'],
+      ],
     })
     return res.json({ reviews});
   })

@@ -10,7 +10,9 @@ router.get(
     "/",
     requireAuth,
     asyncHandler(async function (req, res) {
-        const spots = await Spot.findAll()
+        const spots = await Spot.findAll({  order: [
+          ['id', 'DESC'],
+      ],})
       return res.json({ spots });
     })
   );

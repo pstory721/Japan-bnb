@@ -94,7 +94,7 @@ const ReviewReducer = (state = initialState, action) => {
     newState.reviews = [...state.reviews.slice(0, index), action.review, ...state.reviews.slice(index + 1)];
     return newState;
     case POST_REVIEW:
-        return { ...state, reviews: [...state.reviews, action.review] };
+        return { ...state, reviews: [action.review,...state.reviews ] };
     default:
       return state;
   }
