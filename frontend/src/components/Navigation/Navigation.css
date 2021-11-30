@@ -45,3 +45,27 @@ color: whitesmoke;
   justify-content: center;
 
 }
+.giveitaname{
+  margin-top:-15px;
+}
+
+.fuckno{
+  height:15px;
+  width:15px;
+
+
+}
+.nnnn{
+  position: relative;
+  height:15px;
+  width:15px;
+  right:31px;
+  top: 3px;
+   background-color: transparent;
+}
+.nnnn:hover{
+  background-color:transparent;
+}
+.samscool{
+  padding-right: 20px;
+}

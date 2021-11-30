@@ -23,6 +23,12 @@ export function BookingForm({ id }) {
     if (end_date < start_date) {
       errors.push("end date cannot be before start date");
     }
+    if (end_date === "") {
+      errors.push("end date cannot be empty");
+    }
+    if (start_date === "") {
+      errors.push("start date cannot be empty");
+    }
 
     setErrors(errors);
     const payload = {
@@ -32,7 +38,7 @@ export function BookingForm({ id }) {
       end_date,
     };
     await dispatch(PostABooking(payload));
-    history.push("/search");
+    history.push("/spots");
   };
 
   return (

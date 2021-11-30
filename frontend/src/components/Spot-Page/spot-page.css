@@ -19,8 +19,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
 }
 .fam {
+
 }
 .true {
   position: absolute;
@@ -40,29 +42,63 @@
     position: absolute;
     top: 625px;
     left: 230px;
+    margin-left:4px;
 
 }
 .hdf{
     position: absolute;
     top: 640px;
     left: 450px;
+    margin-left: 4px;
 }
 
 .review{
     position: absolute;
-    left: 1450px;
-    bottom: 200px;
+    left: 1400px;
+    bottom: 150px;
+    border-bottom: 1px solid whitesmoke;
+
 }
 .all{
   border-bottom: 1px solid whitesmoke;
 
 }
  .yeah{
+   height:500px;
     position: sticky;
     float: right;
     margin-left:1100px;
-    margin-top: 200px;
+    margin-top: 50px;
+    overflow-y: hidden;
  }
  .e{
    margin-bottom: 5px;
  }
+.fuckit{
+  text-align: center;
+  width:600px;
+  position:relative;
+  top:300px;
+  right:300px;
+  border-top:1px solid whitesmoke;
+  border-bottom:1px solid whitesmoke;
+  padding: 10px;
+  font-size: 24px;
+
+}
+
+.bordah{
+  height:700px;
+  width:1475px;
+  position:absolute;
+  border:1px solid whitesmoke;
+  top:637px;
+  right:195px;
+}
+.yeah:hover{
+  overflow-y: scroll;
+}
+
+.e{
+  margin-left: 5px;
+}

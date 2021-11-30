@@ -6,7 +6,7 @@ import { GetStuff } from "../../store/home";
 
 const containerStyle = {
   width: "800px",
-  height: "1200px",
+  height: "800px",
 };
 
 const center = {

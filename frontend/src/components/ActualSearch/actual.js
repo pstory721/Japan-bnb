@@ -15,7 +15,7 @@ export function Search() {
 
   return (
     <div >
-      <div className="container3">
+      <div className="container4">
         <h1> Stays in the countryside </h1>
         <p> more than 28,000 people have stayed in Japans country side.<br></br>On average they rated their stays 4.8 out of 5 stars. </p>
         {searchSpots?.map((spot) => (
@@ -28,7 +28,7 @@ export function Search() {
             </Link>
         ))}
       </div>
-      <div className="map">
+      <div className="map1">
         <SearchContainer />
 
       </div>

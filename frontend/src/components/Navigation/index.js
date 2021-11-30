@@ -63,8 +63,10 @@ function Navigation({ isLoaded }) {
             <li key={error}>{error}</li>
           ))}
           </ul>
-        <input type="text" placeholder="Search" value={input} onChange={(e) => setInput(e.target.value)}></input>
-        <button type="submit">search</button>
+        <input className="samscool" type="text" placeholder="Search" value={input} onChange={(e) => setInput(e.target.value)}></input>
+        <button className="nnnn" type="submit">
+          <img className="fuckno" src="https://res.cloudinary.com/dzjkwepju/image/upload/v1636685077/Styckr/1200px-Magnifying_glass_icon.svg_swnjm6.png"></img>
+        </button>
         </form>
       </>
     );
@@ -125,7 +127,7 @@ function Navigation({ isLoaded }) {
         <div> {isLoaded} </div>
 
         <div className="row">
-          <div>
+          <div className="giveitaname">
             {search}
           </div>
           {signup}

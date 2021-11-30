@@ -20,9 +20,14 @@ export function Spots() {
 
   return (
     <div >
+      <div className="cuck">
+        <div className="cuck-title">
+      <h1> Stays in Japan </h1>
+      <p> more than 28,000 people have stayed in Japans country side.<br></br>On average they rated their stays 4.8 out of 5 stars. </p>
+      </div>
+      </div>
       <div className="container3">
-        <h1> Stays in the countryside </h1>
-        <p> more than 28,000 people have stayed in Japans country side.<br></br>On average they rated their stays 4.8 out of 5 stars. </p>
+        <div className="fourtwentysixtynine">
         {searchSpots?.map((spot) => (
           <Link to={`spot-page/${spot.id}`}>
             <div className='bleh'>
@@ -31,10 +36,10 @@ export function Spots() {
 
             </div>
             </Link>
-        ))}
+        ))}</div>
       </div>
       <div className="map">
-        <MapContainer />
+        <MapContainer  />
 
       </div>
     </div>

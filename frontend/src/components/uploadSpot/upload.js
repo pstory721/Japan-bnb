@@ -11,6 +11,7 @@ export function UploadForm() {
   const sessionUser = useSelector((state) => state.session.user);
   const key = useSelector((state) => state.Maps.key);
   const [name, setName] = useState("");
+  const [description, setDescription] = useState("");
   const [address, setAddress] = useState("");
   const [city, setCity] = useState("");
   const [price, setPrice] = useState("");
@@ -90,6 +91,17 @@ export function UploadForm() {
             name="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
+          />
+        </label>
+        <label>
+          description
+          <br></br>
+          <input
+          className='input'
+            type="text"
+            name="description"
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
           />
         </label>
 
