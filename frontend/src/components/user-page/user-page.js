@@ -29,7 +29,7 @@ function User() {
         <h2> Your Bookings </h2>
         <ul>
         {bookings?.map((booking) =>(
-          <li className="bruh"> {booking?.Spot?.name} </li>
+          <li className="bruh"> {booking?.Spot?.address} </li>
         ))}
         </ul>
       </div>

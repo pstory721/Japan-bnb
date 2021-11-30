@@ -38,7 +38,7 @@ router.put("/:id", asyncHandler(async function (req, res) {
   return res.json({UpdatedSpot});
 }));
 router.post('/', asyncHandler(async function (req, res) {
-    const {address,city,lat,lng,name,price,userId,image_url} = req.body
+    const {address,city,lat,lng,name,description,price,userId,image_url,imageurlone,imageurltwo,imageurlthree,imageurlfour} = req.body
     const newSpot = await Spot.create({
       userId,
       address,
@@ -46,10 +46,32 @@ router.post('/', asyncHandler(async function (req, res) {
       lat,
       lng,
       name,
+      description,
       price,
       image_url,
     }
+
       )
+      const newimage1 = await Image.create({
+        spotId:newSpot.id,
+        imageurl:imageurlone
+
+      })
+      const newimage2 = await Image.create({
+        spotId:newSpot.id,
+        imageurl:imageurltwo
+
+      })
+      const newimage3 = await Image.create({
+        spotId:newSpot.id,
+        imageurl:imageurlthree
+
+      })
+      const newimage4 = await Image.create({
+        spotId:newSpot.id,
+        imageurl:imageurlfour
+
+      })
       return res.json({newSpot});
   }))
 

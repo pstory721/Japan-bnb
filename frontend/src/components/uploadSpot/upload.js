@@ -77,6 +77,7 @@ export function UploadForm() {
     const payload = {
       userId: sessionUser.id,
       name,
+      description,
       address,
       city,
       lat,
@@ -90,7 +91,7 @@ export function UploadForm() {
 
     };
     await dispatch(PostASpot(payload));
-    history.push("/search");
+    history.push("/spots");
   };
 
   return (

@@ -110,6 +110,7 @@ const SingleSpotReducer = (state = initialState, action) => {
       newState = Object.assign({}, state);
       newState.spots = [action.spots];
       newState.images = action.images;
+      newState.bookings=action.bookings;
       return newState;
     case BOOKING_FILL:
     newState = Object.assign({}, state);

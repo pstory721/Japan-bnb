@@ -12,7 +12,7 @@
 }
 
 .sillyme {
-  margin: 0 auto 0;
+  margin: 0 auto 100px;
   display: flex;
   height: 100%;
   width: 75%;
@@ -55,7 +55,7 @@
 .review{
     position: absolute;
     left: 1400px;
-    bottom: 150px;
+    bottom: 175px;
     border-bottom: 1px solid whitesmoke;
 
 }
@@ -68,7 +68,7 @@
     position: sticky;
     float: right;
     margin-left:1100px;
-    margin-top: 50px;
+   margin-top: 35px;
     overflow-y: hidden;
  }
  .e{

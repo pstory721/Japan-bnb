@@ -45,8 +45,8 @@ module.exports = (sequelize, DataTypes) => {
     }
   }, {});
   Spot.associate = function(models) {
-    Spot.hasMany(models.Booking,{foreignKey:"spotId"})
-    Spot.hasMany(models.Image,{foreignKey:"spotId"})
+    Spot.hasMany(models.Booking,{foreignKey:"spotId",onDelete: "CASCADE", hooks:true})
+    Spot.hasMany(models.Image,{foreignKey:"spotId",onDelete: "CASCADE", hooks: true})
   };
   return Spot;
 };

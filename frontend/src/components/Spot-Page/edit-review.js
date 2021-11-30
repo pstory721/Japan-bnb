@@ -11,7 +11,6 @@ function EditForm({reviewId}){
     const [review, setReview] = useState("")
     const [spotId,setSpotId] = useState(id)
     const [userId,setUserId] = useState(sessionUser.id)
-
     const handleSubmit = (e) => {
         e.preventDefault();
         let payload = {review, userId,spotId}

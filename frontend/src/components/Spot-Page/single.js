@@ -4,21 +4,23 @@ import { useParams, useHistory, Redirect } from "react-router-dom";
 import { DeleteAReview } from "../../store/review";
 import EditForm from "./edit-review";
 
-export function SingleReview({ id }) {
+export function SingleReview({ userId,reviewId }) {
   const history = useHistory();
+  const {id} = useParams()
   const sessionUser = useSelector((state) => state.session.user);
   const allReviews = useSelector((state) => state.Review.reviews);
   const dispatch = useDispatch();
   const [showForm, setShowForm] = useState(false);
+
   let reviewCheck;
-  if (sessionUser?.id === id) {
+  if (sessionUser?.id === userId) {
     reviewCheck = (
       <>
         <button
           className="x"
           id="splashlinkbuttons"
           onClick={() => {
-            dispatch(DeleteAReview(id));
+            dispatch(DeleteAReview(reviewId));
             history.push(`/spot-page/${id}`);
           }}
         >
@@ -33,7 +35,7 @@ export function SingleReview({ id }) {
         >
           Edit
         </button>
-        {showForm && <EditForm reviewId={id} />}
+        {showForm && <EditForm reviewId={reviewId} />}
       </>
     );
   } else {

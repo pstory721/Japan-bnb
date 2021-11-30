@@ -16,18 +16,24 @@ export function SpotPage() {
   const dispatch = useDispatch();
   const sessionUser = useSelector((state) => state.session.user);
   const singleSpot = useSelector((state) => state.Spot.spots);
+  const bookings = useSelector((state) => state.Spot.bookings);
   const images = useSelector((state) => state.Spot.images);
   const allReviews = useSelector((state) => state.Review.reviews);
   const [showForm2, setShowForm2] = useState(false);
   const handleDelete = (e) => {
     // e.preventDefault();
     dispatch(DeleteASpot(id));
-    history.push(`/search`);
+    history.push(`/spots`);
   };
 
   let userCheck;
   singleSpot?.map((spot) => {
-    if (sessionUser?.id === spot?.userId) {
+    if(bookings.length > 0){
+      userCheck= <div> This spot has bookings, cannot remove listing until the apointments are over or the client/clients has been contacted.</div>
+
+    }
+    else if (sessionUser?.id === spot?.userId) {
+
       userCheck = (
         <button className="btn"
           id=""
@@ -74,7 +80,7 @@ export function SpotPage() {
     <div className="sillyme">
       <div className="fam">
         {singleSpot?.map((spot) => (
-          <img className="true" src={`${spot.image_url}`}></img>
+          <img className="true" src={`${spot?.image_url}`}></img>
         ))}
         <h1>{singleSpot[0]?.address}</h1>
       </div>
@@ -84,7 +90,7 @@ export function SpotPage() {
             <ul>
               <li id="gh">
             <img className="pleg"
-              src={image.image_url}
+              src={image.imageurl}
               alt="art"
             ></img>
             </li>
@@ -98,7 +104,7 @@ export function SpotPage() {
       <BookingForm id={id} />
         </div>
         {singleSpot?.map((spot) => (
-          <p className="fuckit">{spot.description}</p>
+          <p className="fuckit">{spot?.description}</p>
         ))}
         <div> </div>
       <div className="hdf">
@@ -118,7 +124,7 @@ export function SpotPage() {
           <div className="all">
             <h2> {review.username} </h2>
             <p className="">{review.review}</p>
-            <SingleReview id={review.id} />
+            <SingleReview userId={review.userId} reviewId={review.id} />
           </div>
         ))}
 
