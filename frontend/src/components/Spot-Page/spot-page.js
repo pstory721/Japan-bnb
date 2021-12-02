@@ -77,7 +77,7 @@ export function SpotPage() {
   }, [dispatch]);
 
   return (
-    <div className="sillyme">
+    <div className="div5">
       <div className="fam">
         {singleSpot?.map((spot) => (
           <img className="true" src={`${spot?.image_url}`}></img>
@@ -104,7 +104,7 @@ export function SpotPage() {
       <BookingForm id={id} />
         </div>
         {singleSpot?.map((spot) => (
-          <p className="fuckit">{spot?.description}</p>
+          <p className="p">{spot?.description}</p>
         ))}
         <div> </div>
       <div className="hdf">
