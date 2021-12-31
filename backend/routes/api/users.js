@@ -33,8 +33,8 @@ router.post(
   '',
   validateSignup,
   asyncHandler(async (req, res) => {
-    const { email, password, username } = req.body;
-    const user = await User.signup({ email, username, password });
+    const { email, password, username,picture,phone,bio } = req.body;
+    const user = await User.signup({ email, username, password,picture,bio, phone });
 
     await setTokenCookie(res, user);
 
@@ -43,5 +43,17 @@ router.post(
     });
   }),
 );
-
+router.put("/patch", asyncHandler(async function (req, res) {
+  const user = await User.findByPk(req.params.id)
+  const id = req.params
+  delete req.body.id
+  await UpdatedReview.update(
+    req.body,
+    {where:{id},
+    returning: true,
+    plain: true
+  }
+  )
+  return res.json({user});
+}));
 module.exports = router;

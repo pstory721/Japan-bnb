@@ -10,6 +10,9 @@ function SignupFormPage() {
   const [email, setEmail] = useState("");
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [picture, setPicture] = useState("");
+  const [phone, setPhone] = useState("");
+  const [bio, setBio] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [errors, setErrors] = useState([]);
 
@@ -53,6 +56,33 @@ function SignupFormPage() {
           type="text"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
+          required
+        />
+      </label>
+      <label className='sign-cred'>
+        bio <br/>
+        <input
+          type="text"
+          value={bio}
+          onChange={(e) => setBio(e.target.value)}
+          required
+        />
+      </label>
+      <label className='sign-cred'>
+        picture <br/>
+        <input
+          type="text"
+          value={picture}
+          onChange={(e) => setPicture(e.target.value)}
+          required
+        />
+      </label>
+      <label className='sign-cred'>
+        phone <br/>
+        <input
+          type="text"
+          value={phone}
+          onChange={(e) => setPhone(e.target.value)}
           required
         />
       </label>

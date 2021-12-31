@@ -1,5 +1,5 @@
-'use strict';
-const { Model, Validator } = require('sequelize');
+"use strict";
+const { Model, Validator } = require("sequelize");
 const bcrypt = require("bcryptjs");
 
 module.exports = (sequelize, DataTypes) => {
@@ -15,8 +15,8 @@ module.exports = (sequelize, DataTypes) => {
       return User.scope("currentUser").findByPk(id);
     }
     static async login({ credential, password }) {
-      const { Op } = require('sequelize');
-      const user = await User.scope('loginUser').findOne({
+      const { Op } = require("sequelize");
+      const user = await User.scope("loginUser").findOne({
         where: {
           [Op.or]: {
             username: credential,
@@ -25,7 +25,7 @@ module.exports = (sequelize, DataTypes) => {
         },
       });
       if (user && user.validatePassword(password)) {
-        return await User.scope('currentUser').findByPk(user.id);
+        return await User.scope("currentUser").findByPk(user.id);
       }
     }
     static async signup({ username, email, password }) {
@@ -35,12 +35,12 @@ module.exports = (sequelize, DataTypes) => {
         email,
         hashedPassword,
       });
-      return await User.scope('currentUser').findByPk(user.id);
-    };
-    static associate(models) {
-      User.hasMany(models.Booking,{foreignKey:"userId"})
+      return await User.scope("currentUser").findByPk(user.id);
     }
-  };
+    static associate(models) {
+      User.hasMany(models.Booking, { foreignKey: "userId" });
+    }
+  }
   User.init(
     {
       username: {
@@ -55,6 +55,7 @@ module.exports = (sequelize, DataTypes) => {
           },
         },
       },
+
       email: {
         type: DataTypes.STRING,
         allowNull: false,
@@ -62,12 +63,25 @@ module.exports = (sequelize, DataTypes) => {
           len: [3, 256],
         },
       },
+
+      picture: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+
+      phone: {
+          type: DataTypes.STRING,
+          allowNull: false,
+        },
+        bio: {
+          type: DataTypes.STRING,
+          allowNull: false,
+        },
+
+
       hashedPassword: {
         type: DataTypes.STRING.BINARY,
         allowNull: false,
-        validate: {
-          len: [60, 60],
-        },
       },
     },
     {
