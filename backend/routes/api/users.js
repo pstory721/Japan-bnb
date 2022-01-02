@@ -43,17 +43,19 @@ router.post(
     });
   }),
 );
-router.put("/patch", asyncHandler(async function (req, res) {
-  const user = await User.findByPk(req.params.id)
-  const id = req.params
-  delete req.body.id
-  await UpdatedReview.update(
-    req.body,
-    {where:{id},
-    returning: true,
-    plain: true
-  }
-  )
+router.patch("/patch", asyncHandler(async function (req, res) {
+  const {username,
+    password,
+    picture,
+    phone,
+    bio,} = req.body
+  const user = await User.findByPk(req.body.id)
+  userdata = {username,
+    password,
+    picture,
+    phone,
+    bio,}
+  await user.update(userdata)
   return res.json({user});
 }));
 module.exports = router;

@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { GetBookings } from "../../store/spots";
 import { GetAllReviews } from "../../store/review";
 import "./user.css";
+import EditSignupFormPage from "./edit-user";
 
 function User() {
   const dispatch = useDispatch();
@@ -10,7 +11,7 @@ function User() {
   const sessionUser = useSelector((state) => state.session.user);
   const bookings = useSelector((state) => state.Spot.bookings);
   const reviews = useSelector((state) => state.Review.reviews);
-  const [bio, setBio] = useState("");
+  const [showForm2, setShowForm2] = useState(false);
 
   useEffect(() => {
     dispatch(GetBookings());
@@ -18,6 +19,18 @@ function User() {
   useEffect(() => {
     dispatch(GetAllReviews(id));
   }, [dispatch]);
+
+  let check = (
+    <button
+      className="e"
+      onClick={() =>
+        showForm2 === false ? setShowForm2(true) : setShowForm2(false)
+      }
+      id="splashlinkbuttons"
+    >
+      Edit
+    </button>
+  );
 
   return (
     <div className="container5">
@@ -39,6 +52,8 @@ function User() {
                 <span className="phone">{sessionUser.phone}</span>
               </p>
               <p>{sessionUser.bio}</p>
+              {check}
+              {showForm2&&<EditSignupFormPage />}
             </div>
           </div>
         </div>
