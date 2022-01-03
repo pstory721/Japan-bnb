@@ -105,7 +105,7 @@ export function UploadForm() {
             ))}
           </ul>
 
-          <label>
+          <label className='host-labes'>
             Name
             <br></br>
             <input
@@ -116,7 +116,7 @@ export function UploadForm() {
               onChange={(e) => setName(e.target.value)}
             />
           </label>
-          <label>
+          <label className='host-labes'>
             description
             <br></br>
             <input
@@ -128,7 +128,7 @@ export function UploadForm() {
             />
           </label>
 
-          <label>
+          <label className='host-labes'>
             Address
             <br></br>
             <input
@@ -140,7 +140,7 @@ export function UploadForm() {
             />
           </label>
 
-          <label>
+          <label className='host-labes'>
             Cover Picture
             <br></br>
             <input
@@ -152,7 +152,7 @@ export function UploadForm() {
             />
           </label>
 
-          <label>
+          <label className='host-labes'>
             City
             <br></br>
             <input
@@ -164,10 +164,11 @@ export function UploadForm() {
             />
           </label>
 
-          <label>
+          <label className='host-labes'>
             Price
             <br></br>
             <input
+            className="input"
               type="number"
               name="price"
               value={price}
@@ -175,7 +176,7 @@ export function UploadForm() {
             />
           </label>
 
-          <label>
+          <label className='host-labes'>
             Image one
             <br></br>
             <input
@@ -186,7 +187,7 @@ export function UploadForm() {
               onChange={(e) => setImageurlone(e.target.value)}
             />
           </label>
-          <label>
+          <label className='host-labes'>
             Image two
             <br></br>
             <input
@@ -197,7 +198,7 @@ export function UploadForm() {
               onChange={(e) => setImageurltwo(e.target.value)}
             />
           </label>
-          <label>
+          <label className='host-labes'>
             Image three
             <br></br>
             <input
@@ -208,7 +209,7 @@ export function UploadForm() {
               onChange={(e) => setImageurlthree(e.target.value)}
             />
           </label>
-          <label>
+          <label className='host-labes'>
             image four
             <br></br>
             <input
@@ -220,7 +221,7 @@ export function UploadForm() {
             />
           </label>
 
-          <button id="submit" type="submit" disabled={errors.length > 0}>
+          <button className='create-spot' id="submit" type="submit" disabled={errors.length > 0}>
             Create
           </button>
         </div>

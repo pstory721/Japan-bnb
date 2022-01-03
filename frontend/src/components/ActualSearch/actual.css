@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap:unset;
-    height: 800px;
+    height: 700px;
     width: 800px;
     white-space: nowrap;
     overflow-y: hidden;
@@ -16,7 +16,7 @@
   }
 
 
-  .pho{
+  .pho1{
       border-bottom: 1px solid whitesmoke;
       float: left;
       left:20px;
@@ -28,29 +28,96 @@
     top:130px;
     right:165px;
 }
-.bleh{
+.bleh1{
     margin-top:10px;
     height: 400px;
-    width:400px;
+    width:600px;
     border:1px solid whitesmoke;
     display: flex;
     flex-direction: column;
     align-items:center;
     justify-content:center;
 }
-.jacob{
+.jacob1{
+    width:600px;
     color: whitesmoke;
     margin-bottom: 40px;
-    text-align: unset;
+    text-align: center;
+    /* padding-right: 40px; */
+    font-size: 18px;
     float:right;
-    overflow: hidden;
+    overflow-wrap:break-word;
 }
 
-.fourtwentysixtynine{
-    padding-top: 5250px;
+.fourtwentysixtynine1{
+    padding-top: 5050px;
 }
-.cuck{
+.chuck1{
     position: absolute;
     top:100px;
     left:200px;
+}
+
+@media screen and (min-width: 2499px){
+    .container4 {
+      display: flex;
+      /* padding-top: 2700px; */
+      margin-top: 200px;
+      margin-bottom: 200px;
+      float:left;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap:unset;
+      height: 900px;
+      width: 1000px;
+      white-space: nowrap;
+      overflow-y: hidden;
+    }
+    .container4:hover{
+        overflow-y: scroll;
+    }
+
+    .chuck1{
+      /* position: relative; */
+      font-size: 24px;
+      /* top:100px;
+      left:200px; */
+  }
+
+  .bleh1{
+    margin-top:10px;
+    height: 600px;
+    width:800px;
+    border:1px solid whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+
+}
+
+.fourtwentysixtynine1{
+    margin-top: 2350px;
+
+  }
+
+.pho1{
+  border-bottom: 1px solid whitesmoke;
+  float: left;
+  left:20px;
+  height:400px;
+  width:500px;
+}
+
+.jacob1{
+  width:600px;
+    color: whitesmoke;
+    margin-bottom: 40px;
+    text-align: center;
+    /* padding-right: 40px; */
+    font-size: 22px;
+    float:right;
+    overflow-wrap:break-word;
+}
 }

@@ -32,8 +32,8 @@ function ProfileButton({ user }) {
 
   return (
     <>
-    <button><Link to="/user">Your page</Link></button>
-    <button onClick={logout}>Log Out</button>
+    <button className='your-page'><Link to="/user">Your page</Link></button>
+    <button className='log-out' onClick={logout}>Log Out</button>
 
 
     </>

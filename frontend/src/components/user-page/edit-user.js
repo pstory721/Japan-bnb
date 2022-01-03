@@ -38,6 +38,7 @@ function EditSignupFormPage() {
       <label className='sign-cred'>
         Username <br/>
         <input
+        className='put-put'
           type="text"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
@@ -47,6 +48,7 @@ function EditSignupFormPage() {
       <label className='sign-cred'>
         bio <br/>
         <input
+        className='put-put'
           type="textarea"
           value={bio}
           onChange={(e) => setBio(e.target.value)}
@@ -56,6 +58,7 @@ function EditSignupFormPage() {
       <label className='sign-cred'>
         picture <br/>
         <input
+        className='put-put'
           type="text"
           value={picture}
           onChange={(e) => setPicture(e.target.value)}
@@ -65,6 +68,7 @@ function EditSignupFormPage() {
       <label className='sign-cred'>
         phone <br/>
         <input
+        className='put-put'
           type="text"
           value={phone}
           onChange={(e) => setPhone(e.target.value)}

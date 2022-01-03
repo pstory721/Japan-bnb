@@ -47,7 +47,7 @@ function Navigation({ isLoaded }) {
   let upload;
   if (sessionUser) {
     upload = (
-      <button>
+      <button className='host-now'>
         <Link to="/upload">Host Now</Link>
       </button>
     );
@@ -65,7 +65,7 @@ function Navigation({ isLoaded }) {
           </ul>
         <input className="samscool" type="text" placeholder="Search" value={input} onChange={(e) => setInput(e.target.value)}></input>
         <button className="nnnn" type="submit">
-          <img className="fuckno" src="https://res.cloudinary.com/dzjkwepju/image/upload/v1636685077/Styckr/1200px-Magnifying_glass_icon.svg_swnjm6.png"></img>
+          <img className="icons" src="https://res.cloudinary.com/dzjkwepju/image/upload/v1636685077/Styckr/1200px-Magnifying_glass_icon.svg_swnjm6.png" alt='whoops that broke'></img>
         </button>
         </form>
       </>
@@ -78,7 +78,7 @@ function Navigation({ isLoaded }) {
       <>
         <img className="sam" src="" alt=""></img>
         <NavLink id="fu" exact to="/home">
-          <img
+          <img className='the-bnb'
             src="https://res.cloudinary.com/dveuedvvm/image/upload/v1637619426/4564414631_yscaof.png"
             alt="whoops that broke"
           ></img>
@@ -99,6 +99,7 @@ function Navigation({ isLoaded }) {
   if (!sessionUser) {
     demoButton = (
       <button
+      className='the-demo'
         onClick={() => {
           setCredential("demo@user.io");
           setPassword("password");

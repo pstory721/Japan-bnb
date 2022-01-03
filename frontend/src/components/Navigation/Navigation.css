@@ -7,8 +7,6 @@
   align-items: flex-start;
   border-bottom: solid 2px black;
   margin:0 197px;
-
-
 }
 .profile{
 width: 50%;
@@ -49,7 +47,7 @@ color: whitesmoke;
   margin-top:-15px;
 }
 
-.fuckno{
+.icons{
   height:15px;
   width:15px;
 
@@ -68,4 +66,49 @@ color: whitesmoke;
 }
 .samscool{
   padding-right: 20px;
+}
+
+@media screen and (min-width: 2499px){
+  #navbar {
+    height: 95px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: solid 2px black;
+    margin:0 197px;
+  }
+
+  #fu{
+    font-size: 45px;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    color: whitesmoke;
+    }
+
+    .the-demo{
+      font-size: 23px;
+    }
+
+  .your-page{
+    font-size: 22px;
+  }
+
+  .log-out{
+    font-size: 23px;
+  }
+
+  .host-now{
+    font-size: 23px;
+  }
+
+  .samscool{
+    padding-right: 20px;
+    font-size: 22px;
+  }
+
+  .the-bnb{
+    width: 170px;
+  }
 }

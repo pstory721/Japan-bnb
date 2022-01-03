@@ -4,15 +4,30 @@ import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
 import { useDispatch, useSelector } from "react-redux";
 import { GetStuff } from "../../store/home";
 
-const containerStyle = {
-  width: "800px",
-  height: "800px",
-};
 
 const center = {
   lat: 36.2048,
   lng: 138.2529,
 };
+
+let containerStyle = {
+  width: "800px",
+  height: "800px",
+};
+
+let x = window.matchMedia("(min-width: 2499px)");
+
+function myFunction(x){
+  if(x.matches){
+    containerStyle = {
+      width: "1000px",
+      height: "1000px",
+    };
+  }
+}
+
+myFunction(x)
+
 
 const Maps = ({ apiKey }) => {
   const { isLoaded } = useJsApiLoader({

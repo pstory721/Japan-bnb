@@ -1,0 +1,49 @@
+.login-form{
+    background-color: black;
+    border-radius: 15px;
+    text-align: center;
+    height: 200px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.labes{
+    margin-bottom: 13px;
+}
+
+.bttn-login{
+    text-align: center;
+    margin-left: 85px;
+    width: 80px;
+}
+
+
+@media screen and (min-width: 2499px){
+    .login-bttn{
+        font-size: 23px;
+    }
+
+    .bttn-login{
+        text-align: center;
+        margin-left: 135px;
+        width: 100px;
+        font-size: 24px;
+    }
+
+    .ins{
+        font-size: 24px;
+    }
+
+    .login-form{
+        background-color: black;
+        border-radius: 15px;
+        text-align: center;
+        height: 350px;
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        font-size: 34px;
+    }
+
+}

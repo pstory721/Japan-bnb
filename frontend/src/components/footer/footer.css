@@ -31,10 +31,48 @@
 }
 
 .g-hub{
+    width: 20px;
+    height: 20px;
     margin-left: 10px;
 }
 
 .linked{
+    width: 20px;
+    height: 20px;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+@media screen and (min-width: 2499px){
+    .footer{
+        color: white;
+        background-color: rgb(49, 44, 44);
+        height: 85px;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position:fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .g-hub{
+        width: 40px;
+        height: 40px;
+        margin-left: 10px;
+    }
+
+    .linked{
+        width: 40px;
+        height: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .pat{
+        margin-left: 10px;
+           margin-right: 10px;
+       }
 }

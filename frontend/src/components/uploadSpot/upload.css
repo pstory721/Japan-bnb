@@ -45,3 +45,19 @@
 text-align: center;
 
 }
+
+@media screen and (min-width: 2499px){
+    .host-labes{
+        font-size: 24px;
+    }
+
+    .input{
+        font-size: 24px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .create-spot{
+        font-size: 24px;
+    }
+}

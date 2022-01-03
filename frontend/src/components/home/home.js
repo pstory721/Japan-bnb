@@ -37,7 +37,7 @@ if (!sessionUser) {
     <div className="container">
       <div className="home-back">
         <div className="yo">
-        <h1> not sure where to start? <br></br> Perfect we've got your back</h1>
+        <h1> Not sure where to start? <br></br> Perfect we've got your back</h1>
         {signup}
         </div>
       </div>

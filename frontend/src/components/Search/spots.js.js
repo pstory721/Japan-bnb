@@ -20,8 +20,8 @@ export function Spots() {
 
   return (
     <div >
-      <div className="cuck">
-        <div className="cuck-title">
+      <div className="chuck">
+        <div className="chuck-title">
       <h1> Stays in Japan </h1>
       <p> more than 28,000 people have stayed in Japans country side.<br></br>On average they rated their stays 4.8 out of 5 stars. </p>
       </div>
@@ -36,7 +36,8 @@ export function Spots() {
             <span className="jacob">${spot.price} a night </span>
             </div>
             </Link>
-        ))}</div>
+        ))}
+        </div>
       </div>
       <div className="map">
         <MapContainer  />

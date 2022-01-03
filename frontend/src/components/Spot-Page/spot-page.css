@@ -102,3 +102,72 @@
 .e{
   margin-left: 5px;
 }
+
+@media screen and (min-width: 2499px){
+  .true {
+    position: absolute;
+    top: 235px;
+    left: 230px;
+    height: 500px;
+    width: 600px;
+  }
+
+  .idkwhattodo{
+    margin-top: 200px;
+    font-size: 24px;
+  }
+
+  .p{
+    text-align: center;
+    width:600px;
+    position:relative;
+    top:400px;
+    right:500px;
+    border-top:1px solid whitesmoke;
+    border-bottom:1px solid whitesmoke;
+    padding: 10px;
+    font-size: 30px;
+
+  }
+
+  .bordah{
+    height:860px;
+    width:2000px;
+    position:absolute;
+    border:1px solid whitesmoke;
+    top:757px;
+    right:295px;
+  }
+
+  .review{
+    position: absolute;
+    left: 1500px;
+    bottom: 690px;
+    border-bottom: 1px solid whitesmoke;
+
+}
+
+.u {
+  width: 700px;
+  float: left;
+  display: flex;
+  justify-content:space-between;
+}
+
+.yeah{
+  height:500px;
+   position: sticky;
+   float: right;
+   margin-left:1100px;
+  margin-top:75px;
+   overflow-y: hidden;
+}
+
+.hdf{
+  font-size: 20px;
+  position: absolute;
+  top:770px;
+  left: 430px;
+  margin-left: 4px;
+}
+}

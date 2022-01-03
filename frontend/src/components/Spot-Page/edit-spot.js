@@ -31,6 +31,7 @@ export function UpdateForm({id}) {
         <form className="SongForm" onSubmit={handleSubmit}>
             <label className="noteForms">
                 <input
+                className='input-form'
                     id='name'
                     type="text"
                     value={address}
@@ -41,6 +42,7 @@ export function UpdateForm({id}) {
                  </label>
                  <label className="noteForms">
                 <input
+                className='input-form'
                     id='price'
                     type="number"
                     value={price}

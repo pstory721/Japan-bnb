@@ -44,6 +44,7 @@ function SignupFormPage() {
       <label className='sign-cred'>
         Email <br/>
         <input
+        className='inputs'
           type="text"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
@@ -53,6 +54,7 @@ function SignupFormPage() {
       <label className='sign-cred'>
         Username <br/>
         <input
+        className='inputs'
           type="text"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
@@ -62,6 +64,7 @@ function SignupFormPage() {
       <label className='sign-cred'>
         bio <br/>
         <input
+        className='inputs'
           type="text"
           value={bio}
           onChange={(e) => setBio(e.target.value)}
@@ -71,6 +74,7 @@ function SignupFormPage() {
       <label className='sign-cred'>
         picture <br/>
         <input
+        className='inputs'
           type="text"
           value={picture}
           onChange={(e) => setPicture(e.target.value)}
@@ -80,6 +84,7 @@ function SignupFormPage() {
       <label className='sign-cred'>
         phone <br/>
         <input
+        className='inputs'
           type="text"
           value={phone}
           onChange={(e) => setPhone(e.target.value)}
@@ -89,6 +94,7 @@ function SignupFormPage() {
       <label className='sign-cred'>
         Password <br/>
         <input
+        className='inputs'
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
@@ -98,6 +104,7 @@ function SignupFormPage() {
       <label className='sign-cred'>
         Confirm Password <br/>
         <input
+        className='inputs'
           type="password"
           value={confirmPassword}
           onChange={(e) => setConfirmPassword(e.target.value)}
