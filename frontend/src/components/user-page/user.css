@@ -101,3 +101,27 @@
 }
 
 }
+
+@media screen and (max-width: 1441px){
+  .all-user{
+    width: 1000px;
+    display : flex;
+    justify-content:space-evenly;
+    /* text-align: center; */
+    align-items:center;
+    flex-direction:row;
+    margin-right: 50px;
+    margin-top: 150px;
+    border-left: 1px solid whitesmoke;
+  }
+
+  .your{
+    text-align: center;
+  }
+
+  .card-img-top{
+    margin: 0 -15px 0;
+    height: 150px;
+    width: 200px;
+  }
+}

@@ -121,3 +121,50 @@
     overflow-wrap:break-word;
 }
 }
+
+@media screen and (max-width: 1441px){
+  .bleh1{
+    margin-top:10px;
+    height: 500px;
+    width:600px;
+    border:1px solid whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+
+}
+
+.pho1{
+  border-bottom: 1px solid whitesmoke;
+  float: left;
+  left:20px;
+  height:300px;
+  width:500px;
+}
+
+.fourtwentysixtynine1{
+  margin-top: 1400px;
+
+}
+
+.container4 {
+  display: flex;
+  margin-top:220px;
+  float:left;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap:unset;
+  height:550px;
+  width: 800px;
+  white-space: nowrap;
+  overflow-y: hidden;
+}
+
+.map1{
+  position:absolute;
+  top:130px;
+  right:65px;
+}
+}

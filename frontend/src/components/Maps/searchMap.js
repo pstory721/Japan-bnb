@@ -22,6 +22,19 @@ function myFunction(x){
 
 myFunction(x)
 
+let y = window.matchMedia("(min-width: 1439px)");
+
+function myFunction1(y){
+  if(y.matches){
+    containerStyle = {
+      width: "500px",
+      height: "500px",
+    };
+  }
+}
+
+myFunction1(y)
+
 const center = {
   lat: 36.2048,
   lng: 138.2529,

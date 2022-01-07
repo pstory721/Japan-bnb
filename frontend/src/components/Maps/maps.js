@@ -28,6 +28,19 @@ function myFunction(x){
 
 myFunction(x)
 
+let y = window.matchMedia("(max-width: 1441px)");
+
+function myFunction1(y){
+  if(y.matches){
+    containerStyle = {
+      width: "500px",
+      height: "500px",
+    };
+  }
+}
+
+myFunction1(y)
+
 
 const Maps = ({ apiKey }) => {
   const { isLoaded } = useJsApiLoader({

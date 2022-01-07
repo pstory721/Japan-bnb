@@ -68,7 +68,7 @@ function User() {
       </div>
       <div className="all-user">
         <div>
-          <h2> Your Reviews </h2>
+          <h2 className='your'> Your Reviews </h2>
           {reviews?.map((review) => (
             <div>
               <ul>

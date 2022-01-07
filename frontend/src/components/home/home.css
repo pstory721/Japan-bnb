@@ -172,3 +172,61 @@ a{
     width: 500px;
   }
 }
+
+@media screen and (max-width: 1441px){
+  .home-back {
+    margin-top: 40px;
+    height: 500px;
+    width: 800px;
+    top: 75px;
+    left: 470px;
+    right: 500px;
+    background-image: url("https://res.cloudinary.com/dveuedvvm/image/upload/v1637194375/279348_szqhlk.jpg");
+    animation: chbg 10s infinite alternate;
+    background-size: 1000px 580px;
+    background-repeat: no-repeat;
+    align-self: center;
+  }
+  @keyframes chbg {
+    0% {
+      background-image: url("https://res.cloudinary.com/dveuedvvm/image/upload/v1637194346/nachi-shrine-japan-GettyImages-640039952_xk2z22.jpg");
+      background-size: 1000px 580px;
+      background-repeat: no-repeat;
+      align-self: center;
+    }
+    30% {
+      background-image: url("https://res.cloudinary.com/dveuedvvm/image/upload/v1637194375/279348_szqhlk.jpg");
+      background-size: 1000px 580px;
+      background-repeat: no-repeat;
+      align-self: center;
+    }
+    57% {
+      background-image: url("https://res.cloudinary.com/dveuedvvm/image/upload/v1637194443/Arashiyama_GettyImages-540757494_azr77c.jpg");
+      background-size: 1000px 580px;
+      background-repeat: no-repeat;
+      align-self: center;
+    }
+
+    100% {
+      background-image: url("https://res.cloudinary.com/dveuedvvm/image/upload/v1637194852/yuichi-yokota-tokyo-snow-photo-12_suoca6.jpg");
+      background-size: 1000px 580px;
+      background-repeat: no-repeat;
+      align-self: center;
+    }
+  }
+
+  .first {
+    height: 300px;
+    width: 400px;
+  }
+
+  .second {
+    height: 300px;
+    width: 400px;
+  }
+
+  .third {
+    height: 300px;
+    width: 400px;
+  }
+}

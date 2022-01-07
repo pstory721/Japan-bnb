@@ -107,21 +107,28 @@
   .true {
     position: absolute;
     top: 235px;
-    left: 230px;
+    left: 330px;
     height: 500px;
     width: 600px;
   }
 
   .idkwhattodo{
     margin-top: 200px;
+    margin-left:100px;
     font-size: 24px;
+  }
+
+  .out {
+    position: relative;
+    left: 730px;
+    top: 40px;
   }
 
   .p{
     text-align: center;
     width:600px;
     position:relative;
-    top:400px;
+    top:450px;
     right:500px;
     border-top:1px solid whitesmoke;
     border-bottom:1px solid whitesmoke;
@@ -141,8 +148,8 @@
 
   .review{
     position: absolute;
-    left: 1500px;
-    bottom: 690px;
+    left: 1720px;
+    bottom: 650px;
     border-bottom: 1px solid whitesmoke;
 
 }
@@ -167,7 +174,106 @@
   font-size: 20px;
   position: absolute;
   top:770px;
-  left: 430px;
+  left: 630px;
+  margin-left: 4px;
+}
+}
+
+@media screen and (max-width: 1441px){
+  .true {
+    position: absolute;
+    top: 135px;
+    left: 140px;
+    height: 400px;
+    width: 550px;
+  }
+
+  .pleg {
+    height: 150px;
+    width: 250px;
+    margin-left: -70px;
+  }
+
+  .u {
+    width: 300px;
+    /* float: left; */
+    display: flex;
+    flex-direction: row;
+    /* justify-content:space-between; */
+  }
+
+  .out {
+    position: relative;
+    width: 750px;
+    left: 500px;
+    top: 40px;
+  }
+
+  .bordah{
+    margin-bottom: 700px;
+    height: 760px;
+    width: 1300px;
+    position:absolute;
+    border:1px solid whitesmoke;
+    top: 557px;
+    right: 50px;
+  }
+
+  .idkwhattodo{
+    margin-top: -60px;
+    margin-left: -110px;
+    font-size: 14px;
+  }
+
+  .p{
+    text-align: center;
+    width:600px;
+    position:relative;
+    top: 350px;
+    right: 220px;
+    border-top:1px solid whitesmoke;
+    border-bottom:1px solid whitesmoke;
+    padding: 10px;
+    font-size: 30px;
+  }
+
+  .review{
+    margin-right: 30px;
+    position: absolute;
+    left: 0px;
+    bottom: 75px;
+    border-bottom: 1px solid whitesmoke;
+
+}
+
+.yeah{
+  height:400px;
+   position: absolute;
+   float: right;
+   right: 100px;
+   top: 700px;
+   /* margin-left:1000px;
+  margin-top:75px; */
+   overflow-y: hidden;
+}
+
+.review{
+  position: absolute;
+  left: 1100px;
+  bottom: 175px;
+  border-bottom: 1px solid whitesmoke;
+
+}
+
+.fam {
+  margin-top: 30px;
+font-size: 12px;
+}
+
+.hdf{
+  position: absolute;
+  top: 750px;
+  left: 250px;
   margin-left: 4px;
 }
 }

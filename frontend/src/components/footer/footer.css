@@ -76,3 +76,19 @@
            margin-right: 10px;
        }
 }
+
+@media screen and (max-width: 1441px){
+    /* .footer{
+        margin-top: 800000px;
+        color: white;
+        background-color: rgb(49, 44, 44);
+        height: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position:fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    } */
+}
