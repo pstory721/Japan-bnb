@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import { getKey } from '../../store/map';
 import SearchMap from './searchMap';
-
+//
 const SearchContainer = () => {
   const key = useSelector((state) => state.Maps.key);
   const dispatch = useDispatch();

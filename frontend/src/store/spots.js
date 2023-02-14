@@ -137,4 +137,5 @@ const SingleSpotReducer = (state = initialState, action) => {
       return state;
   }
 };
+//
 export default SingleSpotReducer;

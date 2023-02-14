@@ -4,7 +4,7 @@ import { GetBookings } from "../../store/spots";
 import { GetAllReviews } from "../../store/review";
 import "./user.css";
 import EditSignupFormPage from "./edit-user";
-
+//
 function User() {
   const dispatch = useDispatch();
   const id = useSelector((state) => state.session.user.id);

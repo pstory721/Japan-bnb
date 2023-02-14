@@ -16,7 +16,7 @@ const putUser = (user) => ({
   type:PUT_USER,
   payload: user,
 });
-
+//
 export const login = ({ credential, password }) => async dispatch => {
   const response = await csrfFetch("/api/session", {
     method: "POST",

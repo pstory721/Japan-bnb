@@ -3,7 +3,7 @@ const asyncHandler = require("express-async-handler");
 const { Spot, Booking,Image } = require("../../db/models");
 const router = express.Router();
 const {requireAuth}= require("../../utils/auth")
-
+//
 router.get(
   "/:id",
   requireAuth,

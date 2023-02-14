@@ -7,7 +7,7 @@ import * as sessionActions from "../../store/session";
 import "./Navigation.css";
 import SignupFormModal from "../SignupFormModal";
 import { searchASpot } from "../../store/search";
-
+//
 function Navigation({ isLoaded }) {
   const history = useHistory()
   const dispatch = useDispatch();

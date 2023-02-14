@@ -47,7 +47,7 @@ const Maps = ({ apiKey }) => {
     id: "google-map-script",
     googleMapsApiKey: apiKey,
   });
-
+//
   const dispatch = useDispatch();
   const searchSpots = useSelector((state) => state.Home.spots);
   useEffect(() => {

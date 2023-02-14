@@ -8,7 +8,7 @@ export function Spots() {
   const dispatch = useDispatch();
   const sessionUser = useSelector((state) => state.session.user);
   const searchSpots = useSelector((state) => state.Home.spots);
-
+//
   useEffect(() => {
     dispatch(GetStuff());
   }, [dispatch]);

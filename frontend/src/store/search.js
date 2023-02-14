@@ -5,7 +5,7 @@ const searchSpots = (spots) => ({
   type: GET_SPOTS,
     spots,
 });
-
+//
 export const searchASpot = (input) => async (dispatch) => {
   const response = await csrfFetch("/api/search", {
     method: "PUT",

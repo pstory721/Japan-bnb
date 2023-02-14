@@ -4,7 +4,7 @@ const { Spot } = require("../../db/models");
 const router = express.Router();
 const {Op} = require('sequelize')
 
-
+//
 
 router.put(
     "/",

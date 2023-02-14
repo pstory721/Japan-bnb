@@ -17,7 +17,7 @@ router.get(
   })
 );
 
-
+//
 
   router.post('/', asyncHandler(async function (req, res) {
     const {spotId,userId,start_date,end_date} = req.body

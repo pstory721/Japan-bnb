@@ -8,7 +8,7 @@ export function Search() {
   const dispatch = useDispatch();
   const sessionUser = useSelector((state) => state.session.user);
   const searchSpots = useSelector((state) => state.Search.spots[0]);
-
+//
   useEffect(() => {
     dispatch(GetStuff());
   }, [dispatch]);

@@ -17,7 +17,7 @@ router.get(
     return res.json({ reviews});
   })
 );
-
+//
 router.delete("/:id", asyncHandler(async function (req, res) {
   const DeleteEvent = await Review.findByPk(req.params.id)
   await DeleteEvent.destroy()

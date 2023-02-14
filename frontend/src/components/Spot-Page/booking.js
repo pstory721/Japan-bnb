@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { PostABooking } from "../../store/spots";
 import { getKey } from "../../store/map";
-
+//
 export function BookingForm({ id }) {
   const dispatch = useDispatch();
   const sessionUser = useSelector((state) => state.session.user);

@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { PostASpot } from "../../store/spots";
 import { getKey } from "../../store/map";
 import "./upload.css";
-
+//
 export function UploadForm() {
   const dispatch = useDispatch();
   const sessionUser = useSelector((state) => state.session.user);

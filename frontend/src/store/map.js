@@ -14,7 +14,7 @@ export const getKey = () => async (dispatch) => {
   const data = await res.json();
   dispatch(loadApiKey(data.googleMapsAPIKey));
 };
-
+//
 const initialState = { key: null };
 
 const mapsReducer = (state = initialState, action) => {

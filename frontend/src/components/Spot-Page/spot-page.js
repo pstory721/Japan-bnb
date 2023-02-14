@@ -9,7 +9,7 @@ import EditForm from "./edit-review";
 import "./spot-page.css";
 import { BookingForm } from "./booking";
 import { SingleReview } from "./single";
-
+//
 export function SpotPage() {
   const history = useHistory();
   const { id } = useParams();

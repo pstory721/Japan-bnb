@@ -6,7 +6,7 @@ const ShowStuff = (Stuff) => {
        payload:Stuff
     };
   };
-
+//
 
 export const GetStuff = () => async (dispatch) => {
   const response = await fetch(`/api/home`);
